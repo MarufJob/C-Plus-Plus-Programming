@@ -8,7 +8,7 @@ int main() {
     (a<b) ? cout<<a<<endl:cout<<b<<endl;
     
     c=45,d=55;
-    (c>d) ? cout<<c<<endl:cout<<d<<endl;;
+    (c>d) ? cout<<c<<endl:cout<<d<<endl;
 
     return 0;
 }
