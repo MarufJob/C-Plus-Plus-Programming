@@ -11,7 +11,7 @@ int main()
     cin >> num;
     
     if(num <= 0){
-        cout << "This is inbelite number.";
+        cout << "This is an invalid number.";
         return 0;
     }
 
@@ -41,7 +41,7 @@ Input:Enter a positive integer enter to check: 7
 Output:7 is a prime number.
 
 Input:Enter a positive integer enter to check: -5
-Output:This is inbelite number.
+Output:This is an invalid number.
 
 Input:Enter a positive integer enter to check: 50
 Output:50 is not a prime number.
