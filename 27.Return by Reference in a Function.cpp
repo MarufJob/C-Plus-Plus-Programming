@@ -9,8 +9,8 @@ int& test();
 
 int main() {
 
-  // assign 5 to num variable
-  // equivalent to num = 5;
+  // assign 7 to num variable
+  // equivalent to num = 7;
   test() = 7;
 
   cout <<"Return by Reference = " << num;
