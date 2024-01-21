@@ -2,7 +2,8 @@
 using namespace std;
 
 struct Person {
-    char name[50];
+    //char name[50];
+    string name;
     int age;
     float salary;
 };
@@ -13,7 +14,8 @@ int main() {
     Person p;
 
     cout << "Enter Full name: ";
-    cin.get(p.name, 50);
+    //cin.get(p.name, 50);
+    getline(cin,p.name);
     cout << "Enter age: ";
     cin >> p.age;
     cout << "Enter salary: ";
