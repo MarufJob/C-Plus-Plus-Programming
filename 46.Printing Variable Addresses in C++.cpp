@@ -23,4 +23,9 @@ Output: Address of var1: 0x7ffdb95fda9c
         Address of var2: 0x7ffdb95fda98
         Address of var3: 0x7ffdb95fda94
         
+        Here, 0x at the beginning represents the address is in the hexadecimal form.
+        Notice that the first address differs from the second by 4 bytes and the second address differs from the third by 4 bytes.
+
+        This is because the size of an int variable is 4 bytes in a 64-bit system.
+        
 */
