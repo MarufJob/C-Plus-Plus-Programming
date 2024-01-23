@@ -9,6 +9,7 @@ int main() {
 
     // assign address of var to pointVar
     pointVar = &var;
+    //int* pointVar = &var; //It's work.
     
     // access value pointed by pointVar
     cout << "value stored in that address= " << *pointVar << endl;   // Output: 5
