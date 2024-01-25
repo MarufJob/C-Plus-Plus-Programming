@@ -1,3 +1,4 @@
+//Vector Input analyze
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -36,8 +37,37 @@ int main() {
     
     cout <<"Size of v: "<<v.size()<<endl;
     cout <<"Capacity of v: "<<v.capacity()<<endl;
+    
+    cout <<"\n"<< endl;
+    
+    //Take input in vector
+    v={2,4,6,8,10};
+    
+    cout <<"Value of vactor v = ";
+    for(int i=0; i<v.size();i++)
+    cout<<v[i]<<" ";
+    
+    cout <<"\n"<< endl;
+    
+    cout <<"Size of v: "<<v.size()<<endl;
+    cout <<"Capacity of v: "<<v.capacity()<<endl;
+
+    
+    //Take input in vector
+    vector<int>v1(5,1);
+    
+    cout <<"\n\nValue of vactor v1 = ";
+    for(int i=0; i<v1.size();i++)
+    cout<<v1[i]<<" ";
+    
+    cout<<"\n"<< endl;
+    
+    cout <<"Size of v1: "<<v1.size()<<endl;
+    cout <<"Capacity of v1: "<<v1.capacity()<<endl;
+    
     return 0;
 }
+
 /*
 Output: Size of v: 5
         Capacity of v: 5
@@ -46,4 +76,16 @@ Output: Size of v: 5
         
         Size of v: 6
         Capacity of v: 10
+        
+        
+        Value of vactor v = 2 4 6 8 10 
+        
+        Size of v: 5
+        Capacity of v: 10
+        
+        
+        Value of vactor v1 = 1 1 1 1 1 
+        
+        Size of v1: 5
+        Capacity of v1: 5
 */
