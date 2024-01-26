@@ -21,13 +21,17 @@ int main() {
     cout <<endl;
     
     //Find vector value by index
-    cout <<"vector value 57 index = ";
+    cout <<"vector 57 value index = ";
     cout <<find(arr.begin(),arr.end(),57)-arr.begin()<<endl;
 
+    cout <<"vector 02 index value = ";
+    auto It= find(arr.begin(),arr.end(),57);
+    cout <<*It<<endl;
     return 0;
 }
 
 /*
 Output: Print arr value = 111 333 57 97 19 
-        vector value 57 index = 2
+        vector 57 value index = 2
+        vector 02 index value = 57
 */
