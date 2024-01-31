@@ -14,7 +14,8 @@ int main() {
        cout << n << " is Nonprime"<< endl;
        return 0;
    }
-   for(int i = 2; i <= m; i++){
+   else{
+       for(int i = 2; i <= m; i++){
         if(n%i==0){
         cout << n << " is Nonprime"<< endl;
         return 0;
@@ -23,6 +24,8 @@ int main() {
     cout << n << " is Prime"<< endl;
  
     return 0;
+   }
+   
 }
 
 /*
