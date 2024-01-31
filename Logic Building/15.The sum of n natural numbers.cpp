@@ -13,6 +13,8 @@ int main() {
     }
     cout <<"Sum of n natural numbers = "<< sum<<endl;
 
+    //cout <<"Sum of n natural numbers = "<< (n*(n+1))/2<<endl;
+    
     return 0;
 }
 
