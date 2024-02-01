@@ -20,7 +20,7 @@ int main() {
 
 
 /*
-Input: Give number for Square = 5
+Input: Give number for pattern printing = 5
 Output: 1 1 1 1 1 
         2 2 2 2 2 
         3 3 3 3 3 
