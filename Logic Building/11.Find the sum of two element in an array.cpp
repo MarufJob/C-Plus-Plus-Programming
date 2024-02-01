@@ -24,8 +24,6 @@ int main() {
 }
 /*
 
-Output:
-
-Output:
+Output: Find the repeat element 29 number
 
 */
