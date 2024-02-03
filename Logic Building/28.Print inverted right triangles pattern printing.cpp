@@ -27,3 +27,13 @@ Output: * * * * *
         * * 
         * 
 */
+
+
+/*
+for(i=1 ; i<=num ; i++){
+        for(j=1 ; j<=num-i+1 ; j++){
+            cout <<"* ";
+        }
+        cout<<endl;
+    }
+*/
