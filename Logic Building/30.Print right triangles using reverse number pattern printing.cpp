@@ -37,3 +37,23 @@ for(i=1 ; i<=num ; i++){
         cout<<endl;
     }
 */
+
+/*
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+
+    cout << "Give number for pattern printing = ";
+    cin >> num;
+
+    for (int i = 1; i <= num; i++, cout << endl)
+        for (int j = num; j > num - i; j--)
+            cout << j << " ";
+
+    return 0;
+}
+
+In this version, the inner loop is integrated into the outer loop, and cout << endl is used to move to the next line after each iteration of the outer loop.
+*/
