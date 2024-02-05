@@ -9,9 +9,13 @@ int main() {
     cin >> num;
     
     for(i=1 ; i<=num ; i++){
+
+        // space print
         for(j=1 ; j<=num-i ; j++){
             cout <<" ";
         }
+
+        // star print
         for(k=1 ; k<=i ; k++){
             cout <<"*";
         }
