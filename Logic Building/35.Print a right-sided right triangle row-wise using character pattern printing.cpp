@@ -15,11 +15,17 @@ int main() {
             cout <<"  ";
         }
         
-        // star print
-        for(col=1 ; col<=row ; col++){
-            char var='A'+col-1;
-            cout <<var<<" ";
-        }
+        // // character print
+        // for(col=1 ; col<=row ; col++){
+        //     char var='A'+col-1;
+        //     cout <<var<<" ";
+        // }
+
+        
+        // Char print
+        for(char name='A'; name <= 'A'+row-1;name=name+1)
+        cout << name << " ";
+
         cout<<endl;
     }
 
