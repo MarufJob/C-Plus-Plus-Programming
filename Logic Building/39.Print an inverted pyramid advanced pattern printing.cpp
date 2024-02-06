@@ -23,6 +23,22 @@ int main() {
         cout<<endl;
     }
 
+
+    // for(row=num ; row>=1 ; row--){
+
+    //     // space print
+    //     for(col=1 ; col<=num-row ; col++){
+    //         cout <<"  ";
+    //     }
+
+    //     // star print
+    //      for(col=1 ; col<=2*row-1 ; col++){
+    //         cout <<"* ";
+    //     }
+
+    //     cout<<endl;
+    // }
+
     return 0;
 }
 
