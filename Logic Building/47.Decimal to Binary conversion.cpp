@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int num;
-    cout <<"Give a number = ";
+    cout <<"Give a decimal number = ";
     cin >>num;
     
     int rem,ans=0,mul=1;
@@ -25,9 +25,9 @@ int main() {
 }
 
 /*
-Input: Give a number = 73
+Input: Give a decimal number = 73
 Output: Decimal to Binary conversion = 1001001
 
-Input: Give a number = 85
+Input: Give a decimal number = 85
 Output: Decimal to Binary conversion = 1010101
 */
