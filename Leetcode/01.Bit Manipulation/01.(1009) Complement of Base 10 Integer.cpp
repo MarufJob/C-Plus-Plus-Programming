@@ -33,6 +33,35 @@ Example 3:
 Input: n = 10
 Output: 5
 Explanation: 10 is "1010" in binary, with complement "0101" in binary, which is 5 in base-10.
+1->n = 10
+1->1rem* = 0
+1->2rem*= = 1
+1->ans= = 1
+
+
+1->mul = 2
+2->n = 5
+2->1rem* = 1
+2->2rem*= = 0
+2->ans= = 1
+
+
+2->mul = 4
+3->n = 2
+3->1rem* = 0
+3->2rem*= = 1
+3->ans= = 5
+
+
+3->mul = 8
+4->n = 1
+4->1rem* = 1
+4->2rem*= = 0
+4->ans= = 5
+
+
+4->mul = 16
+Decimal conversion = ans = 5
  
 Constraints:
 0 <= n < 109
