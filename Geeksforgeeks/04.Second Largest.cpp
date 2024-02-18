@@ -20,7 +20,7 @@ public:
 	    }
 	    
 	    //Second largest
-	    int seocnd = INT_MIN;
+	    int second = INT_MIN;
 	    
 	    for(int i=0;i<n;i++){
 	        if(arr[i]!=ans)
@@ -51,3 +51,21 @@ int main() {
 }
 
 // } Driver Code Ends
+
+/*
+Input: 
+N = 6
+Arr[] = {12, 35, 1, 10, 34, 1}
+Output: 34
+Explanation: The largest element of the 
+array is 35 and the second largest element
+is 34.
+
+Input: 
+N = 3
+Arr[] = {10, 5, 10}
+Output: 5
+Explanation: The largest element of 
+the array is 10 and the second 
+largest element is 5.
+*/
