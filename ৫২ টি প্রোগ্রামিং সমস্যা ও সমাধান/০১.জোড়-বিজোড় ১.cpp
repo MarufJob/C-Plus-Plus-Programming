@@ -26,3 +26,16 @@ int main()
 
     return 0;
 }
+
+
+/*
+        How many number you taking = 3
+Input : Give a number = 100
+Output :even
+
+Input : Give a number = 0
+Output :even
+
+Input : Give a number = 1111
+Output :odd
+*/
