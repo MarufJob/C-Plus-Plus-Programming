@@ -23,15 +23,6 @@ int main()
            {
                sum=sum+m;
            }
-
-
-
-
-            /*for(k=1 ; k<=num ; k++)
-            {
-              cout<<"*";
-            }*/
-            //cout<<endl;
        }
        cout<<"Sum = "<<sum;
        cout<<endl;
