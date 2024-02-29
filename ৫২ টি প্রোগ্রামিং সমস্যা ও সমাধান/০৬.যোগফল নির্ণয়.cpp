@@ -33,18 +33,6 @@ int main()
 
 
 /*
-        How many number you taking = 3
-Input : Give a number = 100
-Output :even
-
-Input : Give a number = 0
-Output :even
-
-Input : Give a number = 1111
-Output :odd
-*/
-
-/*
 How many number you taking = 5
 Input :Give a number = 12345
 Output :Sum = 6
