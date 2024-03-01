@@ -24,34 +24,7 @@ int main()
 
        cout<<"Case "<<kase<<" "<<num1<<" "<<num2;
        cout<<endl;
-       
-       
-       
-       
-       
-       
-       
-       
-       /*for(j=1 ; j<=5 ; j++)
-       {
-           m=num%10;
-           num=num/10;
-           if(j==1 || j==5)
-           {
-               sum=sum+m;
-           }
-
-
-
-
-            /*for(k=1 ; k<=num ; k++)
-            {
-              cout<<"*";
-            }*/
-            //cout<<endl;
-       //}
-    }
-
+      
     return 0;
 }
 
