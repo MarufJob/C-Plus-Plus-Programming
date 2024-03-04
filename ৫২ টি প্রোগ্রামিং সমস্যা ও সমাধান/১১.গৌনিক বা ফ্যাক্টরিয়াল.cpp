@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    int T,num1,num2=1,temp,i,j,nth;
+    int T,i,j,nth;
+    long long int temp;
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -27,16 +28,12 @@ int main()
     return 0;
 }
 
-
-/*How many number you taking = 5
-Give a number = 12345
-Sum = 6
-Give a number = 56789
-Sum = 14
-Give a number = 14310
-Sum = 1
-Give a number = 10062
-Sum = 3
-Give a number = 96587
-Sum = 16
+/*
+How many number you taking = 3
+Give a number = 6
+720
+Give a number = 10
+3628800
+Give a number = 15
+1307674368000
 */
