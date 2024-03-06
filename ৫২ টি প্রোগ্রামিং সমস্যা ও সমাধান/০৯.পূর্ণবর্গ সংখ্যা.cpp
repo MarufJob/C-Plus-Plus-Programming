@@ -1,11 +1,12 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 
 int main()
 {
     int i,T,num;
-    double sq_root;
+    int sq_root;
+    //double sq_root;
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -16,7 +17,7 @@ int main()
         cin>>num;
 
         sq_root = sqrt(num);
-
+        //cout<<sq_root<<endl;
 
         if(sq_root * sq_root == num)
         {
@@ -35,25 +36,12 @@ int main()
 
 /*
 How many number you taking = 3
-Input : Give a number = 100
-Output :even
+Input : Give a number = 16
+Output :Yes
 
-Input : Give a number = 0
-Output :even
+Input : Give a number = 18
+Output :No
 
-Input : Give a number = 1111
-Output :odd
-*/
-
-/*How many number you taking = 5
-Give a number = 12345
-Sum = 6
-Give a number = 56789
-Sum = 14
-Give a number = 14310
-Sum = 1
-Give a number = 10062
-Sum = 3
-Give a number = 96587
-Sum = 16
+Input : Give a number = 196
+Output :Yes
 */
