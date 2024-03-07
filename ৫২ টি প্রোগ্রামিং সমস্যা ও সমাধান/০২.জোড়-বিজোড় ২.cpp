@@ -1,17 +1,12 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
     int i,T;
-    char num[101];
+    string num;
+    char num1;
 
-
-    cout<<num.leanth;
-
-
-/*
     cout<<"How many number you taking = ";
     cin>>T;
 
@@ -20,7 +15,9 @@ int main()
         cout<<"Give a number = ";
         cin>>num;
 
-        if(num%'2'=='0')
+        num1 = num.at(num.length() - 1);
+
+        if(num1=='0'||num1=='2'||num1=='4'||num1=='6'||num1=='8')
         {
             cout<<"even"<<endl;
         }
@@ -29,7 +26,16 @@ int main()
             cout<<"odd"<<endl;
         }
     }
-    */
-
+    
     return 0;
 }
+
+/*
+How many number you taking = 3
+Input : Give a number = 100
+Output: even
+Input : Give a number = 0
+Output: even
+Input : Give a number = 1111
+Output: odd
+*/
