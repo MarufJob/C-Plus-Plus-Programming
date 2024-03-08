@@ -18,9 +18,17 @@ int main()
 
         //num1 = num.at(num.length() - 1);
         int length = strlen(num);
-        int last_digit = num[length-1];
+        //int last_digit = num[length-1];
+        
+        // if(last_digit=='0'||last_digit=='2'||last_digit=='4'||last_digit=='6'||last_digit=='8')
+        // {
+        //     cout<<"even"<<endl;
+        // }
+        
+        //string convert a number
+        int last_digit = num[length-1]-48;
 
-        if(last_digit=='0'||last_digit=='2'||last_digit=='4'||last_digit=='6'||last_digit=='8')
+        if(last_digit%2==0)
         {
             cout<<"even"<<endl;
         }
