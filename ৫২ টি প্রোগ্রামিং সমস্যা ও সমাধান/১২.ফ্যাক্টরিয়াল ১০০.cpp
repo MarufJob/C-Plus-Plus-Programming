@@ -1,53 +1,41 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int T,i,j,k,nth,num=0,num1;
-    //long long int temp;
-
+    int i,j,T,num,mod,count;
+    
     cout<<"How many number you taking = ";
     cin>>T;
 
     for(i=1 ; i<=T ; i++)
     {
-        //temp=1;
+        count=0;
         cout<<"Give a number = ";
-        cin>>nth;
+        cin>>num;
 
-        for(j=0 ; j<=nth ; j=j+5)
+        for(j=5; j<=num; j=j+5)
         {
-
-            //temp = j*temp;
-            //num=j
-            // for(j=0 ; j<=nth ; j+=5)
-            // {
-                
-            // num=j
-            // }
-            if(j%5==0){
-                num=num+1;
-                num1=j%5;
-                if(num1%5==0)
-                {
-                    num=num+1;
-                }
+            if(j%5==0)
+            {
+                count++;
+                mod=j/5;
+                if(mod%5==0)
+                count++;
             }
         }
-
-       cout<<num<<endl;
+        cout<<count<<endl;
     }
-
     return 0;
 }
 
+
 /*
 How many number you taking = 3
-Give a number = 6
-720
-Give a number = 10
-3628800
-Give a number = 15
-1307674368000
+Input :Give a number = 6
+Output:1
+Input :Give a number = 15
+Output:3
+Input :Give a number = 100
+Output:24
 */
