@@ -10,11 +10,12 @@ int main() {
 
 
     
-    for(row=num/2 ; row<=num-1 ; row++){
+    for(row=num/2 ; row<=num-1 ; row=row+2){
 
         // space print
-        for(col=1 ; col<=num-row ; col++){
-            cout <<"-";
+        for(col=row/2 ; col<num-row ; col=col+2){
+            cout <<"+";
+            //cout <<col;
         }
 
         // star print
@@ -24,8 +25,9 @@ int main() {
         
         
         // space print
-        for(col=1 ; col<=num/2 ; col++){
-            cout <<"-";
+        for(col=num-row ; col>=1 ; col--){
+            cout <<"+";
+            //cout <<col;
         }
 
         // star print
@@ -38,30 +40,30 @@ int main() {
     
     
     
-    //     // lower part
-    //     // inverted pyramid
-    //     for(row=num ; row>=1 ; row--){
+        // lower part
+        // inverted pyramid
+        for(row=num ; row>=1 ; row--){
 
-    //     // space print
-    //     for(col=1 ; col<=num-row ; col++){
-    //         cout <<" ";
-    //     }
+        // space print
+        for(col=1 ; col<=num-row ; col++){
+            cout <<" ";
+        }
 
-    //     // star print
-    //      for(col=1 ; col<=2*row-1 ; col++){
-    //         cout <<"*";
-    //     }
+        // star print
+         for(col=1 ; col<=2*row-1 ; col++){
+            cout <<"*";
+        }
 
-    //     // for(col=1 ; col<=row ; col++){
-    //     //     cout <<"* ";
-    //     // }
+        // for(col=1 ; col<=row ; col++){
+        //     cout <<"* ";
+        // }
 
-    //     // for(col=1 ; col<=row-1 ; col++){
-    //     //     cout <<"* ";
-    //     // }
+        // for(col=1 ; col<=row-1 ; col++){
+        //     cout <<"* ";
+        // }
 
-    //     cout<<endl;
-    // }
+        cout<<endl;
+    }
     
 
     return 0;
