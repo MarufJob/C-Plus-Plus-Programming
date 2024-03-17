@@ -3,30 +3,41 @@ using namespace std;
 
 int main()
 {
-    int i,T;
+    int i, T;
     char str[100];
-    int num1;
 
-    cout<<"How many number you taking = ";
-    cin>>T;
+    cout << "How many numbers are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
 
-    for(i=1 ; i<=T ; i++)
+    for (i = 1; i <= T; i++)
     {
-        cout<<"Give a number = ";
+        int num = 1;
+        cout << "Give a string: ";
         cin.get(str, 100);
+        cin.ignore(); // Consume the newline character after inputting the string
 
-        num1 = str.length();
-        cout<<num1<<endl;
-
-        // if(num1=='0'||num1=='2'||num1=='4'||num1=='6'||num1=='8')
-        // {
-        //     cout<<"even"<<endl;
-        // }
-        // else
-        // {
-        //     cout<<"odd"<<endl;
-        // }
+        for (int i = 0; str[i] != '\0'; i++)
+        {
+            if (str[i] == ' ')
+            {
+                num++;
+            }
+        }
+        cout <<num<< endl;
     }
-    
     return 0;
 }
+
+
+/*
+How many numbers are you taking = 4
+Input: Give a string: 1 -2 10000 -50 20 7 445
+Output:7
+Input: Give a string: 9
+Output:1
+Input: Give a string: -98 876 65
+Output:3
+Input: Give a string: 223 9876452 212
+Output:3
+*/
