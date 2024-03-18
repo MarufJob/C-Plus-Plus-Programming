@@ -41,3 +41,41 @@ Output:3
 Input: Give a string: 223 9876452 212
 Output:3
 */
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cout << "How many numbers are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    for (int i = 1; i <= T; i++)
+    {
+        int num = 1;
+        cout << "Give a string: ";
+
+        // Dynamically allocate memory for the string
+        char* str = new char[10000000];
+        cin.get(str, 10000000);
+        cin.ignore(); // Consume the newline character after inputting the string
+
+        for (int i = 0; str[i] != '\0'; i++)
+        {
+            if (str[i] == ' ')
+            {
+                num++;
+            }
+        }
+        cout << "Number of words in the string: " << num << endl;
+
+        // Free dynamically allocated memory
+        delete[] str;
+    }
+    return 0;
+}
+*/
