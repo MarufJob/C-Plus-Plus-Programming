@@ -63,3 +63,45 @@ Output:a = 1
        p = 1
        r = 2
 */
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, T;
+    char str[1000];
+
+    cout << "How many input are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    for (i = 1; i <= T; i++)
+    {
+        cout << "Give a string: ";
+        cin.get(str, 1000);
+        cin.ignore(); // Consume the newline character after inputting the string
+        int count[26]={};
+        
+            for (int j = 0; str[j] != '\0'; j++)
+            {
+                if (str[j] >= 'a' && str[j] <= 'z')
+                {
+                     count[str[j]-'a']++;
+                }
+            }
+            
+        for(int i=0 ; i<=25 ; i++)
+        {
+            if(count[i]>0)
+            {
+                char c='a'+i;
+                cout <<c<<" = "<<count[i]<< endl;
+            }
+        }
+    }
+    return 0;
+}
+
+*/
