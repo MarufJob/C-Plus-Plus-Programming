@@ -57,3 +57,39 @@ Output:t'nod etamitserednu eht
 Input: Give a string: power of a girl
 Output:rewop fo a lrig
 */
+
+/*
+#include <iostream>
+#include <cstring> // for strlen (safer than manual null termination check)
+#include <algorithm> // for std::reverse
+
+using namespace std;
+
+int main() {
+  int T;
+
+  cout << "How many inputs are you taking = ";
+  cin >> T;
+  cin.ignore(); // Consume the newline character
+
+  for (int i = 1; i <= T; i++) {
+    cout << "Give a string: ";
+    char str[1000];
+    cin.getline(str, 1000); // Safer way to read strings (avoids buffer overflow)
+
+    int len = strlen(str); // Get the length of the string
+
+    // Reverse individual words in-place
+    for (int j = 0, start = 0; j <= len; j++) {
+      if (str[j] == ' ' || str[j] == '\0') {
+        reverse(str + start, str + j); // Reverse the current word
+        start = j + 1;
+      }
+    }
+
+    cout << str << endl;
+  }
+
+  return 0;
+}
+*/
