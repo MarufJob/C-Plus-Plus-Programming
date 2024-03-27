@@ -5,16 +5,40 @@ using namespace std;
 int main()
 {
     //C Style string
-    char str[]="Md.Fazley Atif Maruf";
-    char str1[]={'M','d','.',' ','F','a','z','l','e','y',' ','A','t','i','f',' ','M','a','r','u','f','\0'};
-    const char *str2="Md. Fazley Atif Maruf";
+    char str0[]="Md.Fazley Atif Maruf";
+    char str1[]={'M','d','.','F','a','z','l','e','y',' ','A','t','i','f',' ','M','a','r','u','f','\0'};
+    const char *str2="Md.Fazley Atif Maruf";
 
-    cout<<"str = "<<str<<endl;
+    cout<<"str0 = "<<str0<<endl;
     cout<<"str1 = "<<str1<<endl;
     cout<<"str2 = "<<str2<<endl<<endl<<endl;
     
+    
+    
+    //C++ Style string
+    string str3 = ("Md.Fazley Atif Maruf");
+    string str4 = "Md.Fazley Atif Maruf";
+    string str5; str5 = ("Md.Fazley Atif Maruf");
+    
+    
+    cout<<"str3 = "<<str3<<endl;
+    cout<<"str4 = "<<str4<<endl;
+    cout<<"str5 = "<<str5<<endl;
+    
     return 0;
 }
+
+/*
+Output: str0 = Md.Fazley Atif Maruf
+        str1 = Md.Fazley Atif Maruf
+        str2 = Md.Fazley Atif Maruf
+        
+        
+        str3 = Md.Fazley Atif Maruf
+        str4 = Md.Fazley Atif Maruf
+        str5 = Md.Fazley Atif Maruf
+
+*/
 
 /*
 const char *str2="Md. Fazley Atif Maruf";
