@@ -23,7 +23,12 @@ int main()
     
     cout<<"str3 = "<<str3<<endl;
     cout<<"str4 = "<<str4<<endl;
-    cout<<"str5 = "<<str5<<endl;
+    cout<<"str5 = "<<str5<<endl<<endl<<endl;
+    
+    
+    //std::string str(number,character);
+    string str6(15,'M');
+    cout<<"str6 = "<<str6<<endl;
     
     return 0;
 }
@@ -37,6 +42,9 @@ Output: str0 = Md.Fazley Atif Maruf
         str3 = Md.Fazley Atif Maruf
         str4 = Md.Fazley Atif Maruf
         str5 = Md.Fazley Atif Maruf
+        
+        
+        str6 = MMMMMMMMMMMMMMM
 
 */
 
