@@ -7,23 +7,27 @@ int main()
     //C Style string
     char str0[]="Md.Fazley Atif Maruf";
     char str1[]={'M','d','.','F','a','z','l','e','y',' ','A','t','i','f',' ','M','a','r','u','f','\0'};
-    const char *str2="Md.Fazley Atif Maruf";
+    char str2[21]="Md.Fazley Atif Maruf";
+    char str3[21]={'M','d','.','F','a','z','l','e','y',' ','A','t','i','f',' ','M','a','r','u','f','\0'};
+    const char *str4="Md.Fazley Atif Maruf";
 
     cout<<"str0 = "<<str0<<endl;
     cout<<"str1 = "<<str1<<endl;
-    cout<<"str2 = "<<str2<<endl<<endl<<endl;
+    cout<<"str2 = "<<str2<<endl;
+    cout<<"str3 = "<<str3<<endl;
+    cout<<"str4 = "<<str4<<endl<<endl<<endl;
     
     
     
     //C++ Style string
-    string str3 = ("Md.Fazley Atif Maruf");
-    string str4 = "Md.Fazley Atif Maruf";
-    string str5; str5 = ("Md.Fazley Atif Maruf");
+    string Str0 = ("Md.Fazley Atif Maruf");
+    string Str1 = "Md.Fazley Atif Maruf";
+    string Str2; Str2 = ("Md.Fazley Atif Maruf");
     
     
-    cout<<"str3 = "<<str3<<endl;
-    cout<<"str4 = "<<str4<<endl;
-    cout<<"str5 = "<<str5<<endl<<endl<<endl;
+    cout<<"Str0 = "<<Str0<<endl;
+    cout<<"Str1 = "<<Str1<<endl;
+    cout<<"Str2 = "<<Str2<<endl<<endl<<endl;
     
     
     //std::string str(number,character);
@@ -37,16 +41,18 @@ int main()
 Output: str0 = Md.Fazley Atif Maruf
         str1 = Md.Fazley Atif Maruf
         str2 = Md.Fazley Atif Maruf
-        
-        
         str3 = Md.Fazley Atif Maruf
         str4 = Md.Fazley Atif Maruf
-        str5 = Md.Fazley Atif Maruf
+        
+        
+        Str0 = Md.Fazley Atif Maruf
+        Str1 = Md.Fazley Atif Maruf
+        Str2 = Md.Fazley Atif Maruf
         
         
         str6 = MMMMMMMMMMMMMMM
-
 */
+
 
 /*
 const char *str2="Md. Fazley Atif Maruf";
