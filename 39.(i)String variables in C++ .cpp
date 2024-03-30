@@ -31,8 +31,14 @@ int main()
     
     
     //std::string str(number,character);
-    string str6(15,'M');
-    cout<<"str6 = "<<str6<<endl;
+    string STR0(15,'M');
+    cout<<"STR0 = "<<STR0<<endl<<endl<<endl;
+    
+    
+    string input;
+    cout << "Enter a string: ";
+    cin >> input;
+    cout << "You entered: " << input << endl;
     
     return 0;
 }
@@ -50,7 +56,11 @@ Output: str0 = Md.Fazley Atif Maruf
         Str2 = Md.Fazley Atif Maruf
         
         
-        str6 = MMMMMMMMMMMMMMM
+        STR0 = MMMMMMMMMMMMMMM
+        
+        
+        Enter a string: Md.Fazley Atif Maruf
+        You entered: Md.Fazley
 */
 
 
