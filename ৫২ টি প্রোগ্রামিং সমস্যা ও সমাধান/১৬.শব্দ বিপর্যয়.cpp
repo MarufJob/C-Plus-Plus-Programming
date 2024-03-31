@@ -93,3 +93,27 @@ int main() {
   return 0;
 }
 */
+
+
+
+/*
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int i, j, k, t, s_len;
+    char S[1002],word[1002];
+    
+    cin>>t;
+    for(i = 0; i < t; i++)
+    {
+        cout << "Enter a string: ";
+        cin.get(S, 1002, '\n');
+        cin.ignore(); // Consume the newline character after inputting the string
+    }
+
+    return 0;
+}
+*/
