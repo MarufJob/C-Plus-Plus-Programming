@@ -98,7 +98,8 @@ int main() {
 
 /*
 #include <iostream>
-#include <string>
+#include <cstring>
+//#include <string>
 
 using namespace std;
 
@@ -112,6 +113,17 @@ int main() {
         cout << "Enter a string: ";
         cin.get(S, 1002, '\n');
         cin.ignore(); // Consume the newline character after inputting the string
+        
+        s_len = strlen(S);
+        
+        for(j=0, k=0; j<s_len; j++)
+        {
+            if(S[j]!= ' ')
+            {
+                word[k] = S[j];
+                k++;
+            }
+        }
     }
 
     return 0;
