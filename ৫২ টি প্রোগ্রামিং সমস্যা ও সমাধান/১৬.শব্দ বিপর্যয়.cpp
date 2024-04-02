@@ -123,6 +123,12 @@ int main() {
                 word[k] = S[j];
                 k++;
             }
+            else if (k > 0)
+            {
+                word[k] = '\0';
+                cout<<word;
+                k = 0;
+            }
         }
     }
 
