@@ -130,6 +130,11 @@ int main() {
                 k = 0;
             }
         }
+        if (k>0)
+        {
+            word[k]='\0';
+            cout<<word;
+        }
     }
 
     return 0;
