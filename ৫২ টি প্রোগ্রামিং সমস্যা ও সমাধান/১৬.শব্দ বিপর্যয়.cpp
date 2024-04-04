@@ -139,4 +139,9 @@ int main() {
 
     return 0;
 }
+
+void print_reverse(char str[])
+{
+    int i;
+}
 */
