@@ -143,5 +143,9 @@ int main() {
 void print_reverse(char str[])
 {
     int i;
+    for (i = strlen(str) - 1; i>=0; i--)
+    {
+        cout<<str[i];
+    }
 }
 */
