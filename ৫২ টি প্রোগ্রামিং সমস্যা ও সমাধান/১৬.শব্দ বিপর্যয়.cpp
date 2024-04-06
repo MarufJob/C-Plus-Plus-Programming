@@ -107,11 +107,17 @@ int main() {
     int i, j, k, t, s_len;
     char S[1002],word[1002];
     
+    cout << "How many input are you taking = ";
     cin>>t;
+    cin.ignore(); // Consume the newline character after inputting the string
+    
     for(i = 0; i < t; i++)
     {
         cout << "Enter a string: ";
-        cin.get(S, 1002, '\n');
+        
+        //cin.getline(S, 1002);
+        
+        cin.get(S, 1002);
         cin.ignore(); // Consume the newline character after inputting the string
         
         s_len = strlen(S);
