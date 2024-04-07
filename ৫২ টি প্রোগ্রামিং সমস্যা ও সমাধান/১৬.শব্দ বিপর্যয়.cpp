@@ -103,6 +103,8 @@ int main() {
 
 using namespace std;
 
+void print_reverse(char str[]);
+
 int main() {
     int i, j, k, t, s_len;
     char S[1002],word[1002];
@@ -139,10 +141,12 @@ int main() {
         if (k>0)
         {
             word[k]='\0';
-            cout<<word;
+            //cout<<word;
+            print_reverse(word);
         }
+        
     }
-
+    
     return 0;
 }
 
