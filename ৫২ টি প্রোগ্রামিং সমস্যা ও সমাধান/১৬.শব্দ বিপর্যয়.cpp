@@ -103,6 +103,7 @@ int main() {
 
 using namespace std;
 
+// function prototype
 void print_reverse(char str[]);
 
 int main() {
@@ -141,8 +142,8 @@ int main() {
         if (k>0)
         {
             word[k]='\0';
-            //cout<<word;
             print_reverse(word);
+            cout<<endl;
         }
         
     }
@@ -150,6 +151,7 @@ int main() {
     return 0;
 }
 
+// function definition
 void print_reverse(char str[])
 {
     int i;
