@@ -135,19 +135,21 @@ int main() {
             else if (k > 0)
             {
                 word[k] = '\0';
-                cout<<word;
+                print_reverse(word);
+                
+                //cout<<word;
                 k = 0;
             }
         }
-        if (k>0)
-        {
-            word[k]='\0';
-            print_reverse(word);
-            cout<<endl;
-        }
+        // if (k>0)
+        // {
+        //     word[k]='\0';
+        //     //print_reverse(word);
+        //     cout<<endl;
+        // }
         
+        cout<<endl;
     }
-    
     return 0;
 }
 
