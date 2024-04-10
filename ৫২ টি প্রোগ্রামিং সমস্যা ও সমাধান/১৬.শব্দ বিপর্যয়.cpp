@@ -132,12 +132,14 @@ int main() {
                 word[k] = S[j];
                 k++;
             }
-            else if (k > 0)
+            else if (k > 0 )
             {
                 word[k] = '\0';
                 print_reverse(word);
                 
-                //cout<<word;
+                if(j!=s_len-1)
+                cout<<" ";
+                
                 k = 0;
             }
         }
