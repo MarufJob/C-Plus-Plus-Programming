@@ -124,6 +124,7 @@ int main() {
         cin.ignore(); // Consume the newline character after inputting the string
         
         s_len = strlen(S);
+        //cout<<"S_Len = "<<s_len<<endl;
         
         for(j=0, k=0; j<s_len; j++)
         {
@@ -143,12 +144,11 @@ int main() {
                 k = 0;
             }
         }
-        // if (k>0)
-        // {
-        //     word[k]='\0';
-        //     //print_reverse(word);
-        //     cout<<endl;
-        // }
+        if (k>0)
+        {
+            word[k]='\0';
+            print_reverse(word);
+        }
         
         cout<<endl;
     }
