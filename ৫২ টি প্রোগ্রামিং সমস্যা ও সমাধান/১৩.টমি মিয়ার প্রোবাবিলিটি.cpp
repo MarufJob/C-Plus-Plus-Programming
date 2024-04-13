@@ -5,12 +5,21 @@ using namespace std;
 int main() {
     
     int t,i,j;
+    char str[250];
     
     cout<<"How many input are you taking = ";
     cin>>t;
+    cin.ignore();// Consume the newline character after inputting the string
     
     for(i=0 ; i<t ; i++)
     {
+        cout<<"Enter a string: ";
+        
+        //cin.getline(str,250);
+        cin.get(str,250);
+        cin.ignore();// Consume the newline character after inputting the string
+        
+        cout<<str<<endl;
         
     }
     
@@ -21,23 +30,7 @@ int main() {
 
 
 /*
-#include <iostream>
-#include <cstring>
-//#include <string>
 
-using namespace std;
-
-// function prototype
-void print_reverse(char str[]);
-
-int main() {
-    int i, j, k, t, s_len;
-    char S[1002],word[1002];
-    
-    cout << "How many input are you taking = ";
-    cin>>t;
-    cin.ignore(); // Consume the newline character after inputting the string
-    
     for(i = 0; i < t; i++)
     {
         cout << "Enter a string: ";
