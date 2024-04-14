@@ -1,10 +1,11 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
 int main() {
     
-    int t,i,j;
+    int t,i,j,s_len;
     char str[250];
     
     cout<<"How many input are you taking = ";
@@ -13,14 +14,26 @@ int main() {
     
     for(i=0 ; i<t ; i++)
     {
+        int word=1;
+        
         cout<<"Enter a string: ";
         
         //cin.getline(str,250);
         cin.get(str,250);
         cin.ignore();// Consume the newline character after inputting the string
         
-        cout<<str<<endl;
+        //cout<<str<<endl;
         
+        s_len = strlen(str);
+        
+        for(j=1 ; j<s_len ; j++)
+        {
+            if(str[j]==' ')
+            {
+                word++;
+            }
+        }
+        cout<<word<<endl;
     }
     
 
