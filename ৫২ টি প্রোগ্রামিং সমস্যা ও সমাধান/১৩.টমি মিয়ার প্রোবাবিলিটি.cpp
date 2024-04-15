@@ -14,7 +14,7 @@ int main() {
     
     for(i=0 ; i<t ; i++)
     {
-        int word=1;
+        int word=1,Probability=1;
         
         cout<<"Enter a string: ";
         
@@ -34,6 +34,15 @@ int main() {
             }
         }
         cout<<word<<endl;
+        
+        
+         for(j=1 ; j<=word ; j++)
+        {
+            
+                Probability=Probability*j;
+           
+        }
+        cout<<"Probability = "<<Probability<<endl;
     }
     
 
