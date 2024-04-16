@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     
-    int t,i,j,s_len;
+    int t,i,j,k,s_len;
     char str[250];
     
     cout<<"How many input are you taking = ";
@@ -15,6 +15,7 @@ int main() {
     for(i=0 ; i<t ; i++)
     {
         int word=1,Probability=1;
+        char word_line[20];
         
         cout<<"Enter a string: ";
         
@@ -26,24 +27,35 @@ int main() {
         
         s_len = strlen(str);
         
-        for(j=1 ; j<s_len ; j++)
+        for(j=0 ; j<s_len ; j++)
         {
             if(str[j]==' ')
             {
                 word++;
             }
+            cout<<str[j]<<endl;
         }
-        cout<<word<<endl;
+    //     cout<<word<<endl;
         
-        
-         for(j=1 ; j<=word ; j++)
+         for(j=0,k=0 ; j<s_len ; j++,k++)
         {
             
-                Probability=Probability*j;
+            if(str[j]==' ')
+            {
+               
+            }
            
         }
-        cout<<"Probability = "<<Probability<<endl;
-    }
+        
+        
+    //      for(j=1 ; j<=word ; j++)
+    //     {
+            
+    //             Probability=Probability*j;
+           
+    //     }
+    //     cout<<"Probability = "<<Probability<<endl;
+     }
     
 
     return 0;
@@ -104,5 +116,4 @@ void print_reverse(char str[])
         cout<<str[i];
     }
 }
-
 */
