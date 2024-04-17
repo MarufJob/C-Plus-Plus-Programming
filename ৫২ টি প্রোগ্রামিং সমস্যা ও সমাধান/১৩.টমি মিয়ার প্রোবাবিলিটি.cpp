@@ -39,10 +39,16 @@ int main() {
         
          for(j=0,k=0 ; j<s_len ; j++,k++)
         {
-            
-            if(str[j]==' ')
+            word_line[k]=str[j];
+            if(str[j]==' ' || j==s_len-1)
             {
-               
+                if(j==s_len-1)
+                k++;
+                
+                word_line[k] = '\0'; // Set the last character to null
+                cout<<word_line<<endl;
+                //word_line[k] = '\0';
+               k=-1;
             }
            
         }
