@@ -14,7 +14,7 @@ int main() {
     
     for(i=0 ; i<t ; i++)
     {
-        int count=1;
+        int count=0;
         //char word_line[20];
         
         cout<<"Enter a string: ";
@@ -26,6 +26,7 @@ int main() {
         
         S_len = strlen(S);
         
+        //for(j=0 ; S[j]!='\0' ; j++)
         for(j=0 ; j<S_len ; j++)
         {
             if(S[j]==' ')
@@ -34,12 +35,13 @@ int main() {
             }
         }
    
-        cout<<"Count = "<<count<<endl;
+        cout<<"Count = "<<count+1<<endl;
      }
     
 
     return 0;
 }
+
 
 
 /*
