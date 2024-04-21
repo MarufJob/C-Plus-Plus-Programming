@@ -14,7 +14,7 @@ int main()
     for (i = 1; i <= T; i++)
     {
         cout << "Give a string: ";
-        cin.get(str, 100);
+        cin.get(str, 1000);
         cin.ignore(); // Consume the newline character after inputting the string
         // cin >> c;
         // cin.ignore();
