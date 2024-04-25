@@ -11,7 +11,8 @@ int main()
     cin >> T;
     cin.ignore(); // Consume the newline character
 
-    for (i = 1; i <= T; i++)
+    //for (i = 1; i <= T; i++)
+    while(T--)
     {
         int s_len=0;
         cout << "Give a string: ";
@@ -21,34 +22,13 @@ int main()
         
         s_len=strlen(str);
         
+        //s_len=sizeof(str)/sizeof(str[0]);//s_len = 1000 ->sizeof(arr) returns the total memory arr is taking
+        //cout<<s_len<<endl;
+        
         
             for (int j = s_len-1; j >= 0; j--)
             {
                 cout<<str[j];
-                // if(j==0)
-                // break;
-                
-                
-                
-                // //cout <<"line j = "<<j<<endl;
-                // if (str[j] == ' '|| str[j+1] == '\0')
-                // {
-                //     if(str[j+1] == '\0')
-                //     j++;
-                //   for(int k=j-1 ; k!=' ' ; k--)
-                //     {
-                //         //cout <<"line k = "<<k<<endl;
-                //         if(k<0||str[k]==' ')
-                //         {
-                //             if(str[j+1] == '\0')
-                //             break;
-                //             cout<<' ';
-                //             break;
-                //         }
-                //          cout <<str[k];
-                //         //cout<<endl;
-                //     }
-                // }
             }
             cout<<endl;
     }
@@ -57,13 +37,15 @@ int main()
 
 
 /*
-How many input are you taking = 4
-Input: Give a string: This is a test
-Output:sihT si a tset
-Input: Give a string: Hello World
-Output:olleH dlroW
-Input: Give a string: don't underestimate the
-Output:t'nod etamitserednu eht
-Input: Give a string: power of a girl
-Output:rewop fo a lrig
+How many input are you taking = 5
+Input: Give a string: string
+Output:gnirts
+Input: Give a string: programming
+Output:gnimmargorp
+Input: Give a string: Aruna
+Output:anurA
+Input: Give a string: theygaveabigpartyforme
+Output:emrofytrapgibaevagyeht
+Input: Give a string: shewastwentytwoyearsold
+Output:dlosraeyowtytnewtsawehs
 */
