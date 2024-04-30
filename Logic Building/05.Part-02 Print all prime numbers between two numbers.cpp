@@ -205,30 +205,25 @@ bool isPrime(int num) {
     for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) return false;
     }
-    return true;
+    return num;
 }
 
 int main() {
-    int n, sumEven = 0, sumOdd = 0, sumPrime = 0;
+    int i,num;
 
     cout << "Give a number = ";
-    cin >> n;
+    cin >> i;
+    
+    cout << "Give an another number = ";
+    cin >> num;
 
-    for (int i = 1; i <= n; i++) {
-        if (i % 2 == 0) {
-            sumEven += i;
-        } else {
-            sumOdd += i;
-        }
+    for ( i = i; i <= num; i++) {
 
         if (isPrime(i)) {
-            sumPrime += i;
+            //sumPrime += i;
+            cout<<i<<" ";
         }
     }
-
-    cout << "Even Sum = " << sumEven << endl;
-    cout << "Odd Sum = " << sumOdd << endl;
-    cout << "Prime Sum = " << sumPrime << endl;
 
     return 0;
 }
