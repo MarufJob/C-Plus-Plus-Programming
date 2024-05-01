@@ -196,6 +196,72 @@ int main()
 /*--------------------------*/
 
 /*
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    
+    int num, i,j, flag;
+
+    cout << "Enter a positive number: ";
+    cin >> i;
+    cout << "Enter an another positive number: ";
+    cin >> num;
+    
+    if(num <= 0){
+        cout << "This is an invalid number.";
+        return 0;
+    }
+
+
+    for(i = i; i <= num; ++i)
+    {
+        flag = 0;
+
+        for(j = 2; j <= i/2; ++j)
+        {
+            if(i % j == 0)
+            {
+                flag = 1; 
+                break;
+            }
+        }
+    
+        if (flag == 0 && i>1)
+        {
+            //cout << num << " is not a prime number.";
+            cout << i << " ";
+        }
+        // else
+        // {
+        //     cout << num << " is a prime number.";
+        // }
+    }
+    
+    return 0;
+}
+
+
+
+/*
+Input:Enter a positive number: 150
+      Enter an another positive number: 350
+Output:151 157 163 167 173 179 181 191 193 197 199 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 
+
+*/
+
+
+*/
+
+
+/*--------------------------*/
+
+
+
+
+/*
 
 #include <iostream>
 using namespace std;
