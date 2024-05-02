@@ -307,3 +307,49 @@ Simplified the prime number check using the square root optimization.
 Removed unnecessary code and improved indentation for clarity.
 */
 
+
+
+
+/*--------------------------*/
+
+
+
+/*
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,j,k,mid,num;
+
+    cout<<"Strat = ";
+    cin>>i;
+    cout<<"end = ";
+    cin>>num;
+
+
+    for(k=i ; k<=num ; k++)
+    {
+        int countNum = 0,num2 = 0;
+        mid=k/2;
+
+        for(j=2 ; j*j<=k ; j++)
+        {
+            if(k%j==0)
+            {
+                countNum = 1;
+                break;
+            }
+            //num2++;
+        }
+
+        if(countNum == 0 && k >1)
+            cout<<k<<" ";
+            //cout<<k<<" -> "<<num2<<endl;
+    }
+
+    return 0;
+}
+
+*/
