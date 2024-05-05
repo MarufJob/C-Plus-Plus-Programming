@@ -102,12 +102,25 @@ void sieve()
 }
 
 
+int main()
+{
+    int T, a, b, count;
+    sieve();
 
-
-int main() {
-    // Write C++ code here
-    std::cout << "Try programiz.pro";
-
+    cin>>T;
+    while(T--)
+    {
+        cin>>a>>d;
+        count = 0;
+        for(i= a; i<= b; i++)
+        {
+            if(ara[i])
+            {
+                count++;
+            }
+        }
+        cout<<count;
+    }
     return 0;
 }
 
