@@ -190,3 +190,74 @@ int main()
     }
     return 0;
 }
+
+
+
+
+/**************/
+
+
+
+#include <iostream>
+using namespace std;
+#include <math.h>
+#define size 100001
+int array [size];
+
+
+void sieve()
+{
+    int i,j,root;
+
+     for(i=0; i<size; i++)
+    {
+        array[i]=1;
+    }
+
+    root = sqrt(size);
+
+    for(i=2; i<=root; i++)
+    {
+        if(array[i]==1)
+        {
+             for(j=2; i*j<=size; j++)
+            {
+                array[i * j] = 0;
+            }
+        }
+    }
+    //return array[size];
+
+}
+
+
+
+int main()
+{
+    int T, a, b,i, count;
+    sieve();
+
+    cout<<"How many input are you taking = ";
+    cin>>T;
+    while(T--)
+    {
+        cout<<"Strat = ";
+        cin>>a;
+        cout<<"end = ";
+        cin>>b;
+
+        count = 0;
+        for(i= a; i<= b; i++)
+        {
+            if(array[i])
+            {
+                count++;
+            }
+            cout<<i<<" = "<<array[i]<<endl;
+        }
+        //cout<<count<<endl;
+        cout<<endl;
+    }
+    return 0;
+}
+
