@@ -71,132 +71,9 @@ Output: 332
 */
 
 
-
+/**************************/
 
 /*
-
-#include <iostream>
-#include<math.h>
-#define size 100001
-char ara[size];
-
-
-void sieve()
-{
-    int i,j,root;
-    for(i=2;i<size;i++)
-    {
-        ara[i]=1;
-    }
-    root = sqrt(size);
-    for(i=2;i<=root;i++)
-    {
-        if(ara[i==1])
-        {
-            for(j=2; i*j<=size;j++)
-            {
-                ara[i*j]=0;   
-            }
-        }
-    }
-}
-
-
-int main()
-{
-    int T, a, b, count;
-    sieve();
-
-    cin>>T;
-    while(T--)
-    {
-        cin>>a>>d;
-        count = 0;
-        for(i= a; i<= b; i++)
-        {
-            if(ara[i])
-            {
-                count++;
-            }
-        }
-        cout<<count;
-    }
-    return 0;
-}
-
-*/
-
-
-
-/*******/
-
-
-
-#include <iostream>
-using namespace std;
-#include <math.h>
-#define size 100001
-char array [size];
-
-
-void sieve()
-{
-    int i,j,root;
-
-     for(i=2; i<root; i++)
-    {
-        array[i]=1;
-    }
-
-    root = sqrt(size);
-
-    for(i=2; i<=root; i++)
-    {
-        if(array[i]==1)
-        {
-             for(j=2; i*j<=size; j++)
-            {
-                array[i * j] = 0;
-            }
-        }
-    }
-}
-
-
-
-int main()
-{
-    int T, a, b,i, count;
-    sieve();
-
-    cout<<"How many input are you taking = ";
-    cin>>T;
-    while(T--)
-    {
-        cout<<"Strat = ";
-        cin>>a;
-        cout<<"end = ";
-        cin>>b;
-
-        count = 0;
-        for(i= a; i<= b; i++)
-        {
-            if(array[i])
-            {
-                count++;
-            }
-        }
-        cout<<count<<endl;
-    }
-    return 0;
-}
-
-
-
-
-/**************/
-
-
 
 #include <iostream>
 using namespace std;
@@ -209,7 +86,7 @@ void sieve()
 {
     int i,j,root;
 
-     for(i=0; i<size; i++)
+     for(i=2; i<size; i++)
     {
         array[i]=1;
     }
@@ -226,7 +103,6 @@ void sieve()
             }
         }
     }
-    //return array[size];
 
 }
 
@@ -253,11 +129,31 @@ int main()
             {
                 count++;
             }
-            cout<<i<<" = "<<array[i]<<endl;
+            //cout<<i<<" = "<<array[i]<<endl;
         }
-        //cout<<count<<endl;
+        cout<<count<<endl;
         cout<<endl;
     }
     return 0;
 }
 
+*/
+
+/*
+How many input are you taking = 5
+Input : Strat = 1
+        end = 5
+Output: 3
+Input : Strat = 25
+        end = 50
+Output: 6
+Input : Strat = 12
+        end = 27
+Output: 4
+Input : Strat = 94635
+        end = 99735
+Output: 443
+Input : Strat = 91752
+        end = 95402
+Output: 332
+*/
