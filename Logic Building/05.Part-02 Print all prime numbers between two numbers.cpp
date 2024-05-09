@@ -353,3 +353,88 @@ int main()
 }
 
 */
+
+
+/******************/
+
+
+/*
+
+#include <iostream>
+using namespace std;
+#include <math.h>
+#define size 100001
+int array [size];
+
+
+void sieve()
+{
+    int i,j,root;
+
+     for(i=2; i<size; i++)
+    {
+        array[i]=1;
+    }
+
+    root = sqrt(size);
+
+    for(i=2; i<=root; i++)
+    {
+        if(array[i]==1)
+        {
+             for(j=2; i*j<=size; j++)
+            {
+                array[i * j] = 0;
+            }
+        }
+    }
+
+}
+
+
+int main()
+{
+    int T, a, b,i, count;
+    sieve();
+
+    cout<<"How many input are you taking = ";
+    cin>>T;
+    while(T--)
+    {
+        cout<<"Strat = ";
+        cin>>a;
+        cout<<"end = ";
+        cin>>b;
+
+        count = 0;
+        for(i= a; i<= b; i++)
+        {
+            if(array[i])
+            {
+                //count++;
+                //cout<<i<<" = "<<array[i]<<endl;
+                cout<<i<<" ";
+            }
+            //cout<<i<<" = "<<array[i]<<endl;
+        }
+        //cout<<count<<endl;
+        cout<<endl;
+    }
+    return 0;
+}
+
+*/
+
+/*
+How many input are you taking = 3
+Input : Strat = 1
+        end = 100
+Output: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+Input : Strat = 100
+        end = 200
+Output: 101 103 107 109 113 127 131 137 139 149 151 157 163 167 173 179 181 191 193 197 199
+Input : Strat = 200
+        end = 350
+Output: 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 
+*/
+
