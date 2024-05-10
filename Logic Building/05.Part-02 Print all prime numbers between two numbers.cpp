@@ -378,10 +378,12 @@ void sieve()
 
     root = sqrt(size);
 
+    //for(i=2; i*i<=size; i++)
     for(i=2; i<=root; i++)
     {
         if(array[i]==1)
         {
+            //for(j=2; j<=root; j++)
              for(j=2; i*j<=size; j++)
             {
                 array[i * j] = 0;
@@ -437,4 +439,3 @@ Input : Strat = 200
         end = 350
 Output: 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 
 */
-
