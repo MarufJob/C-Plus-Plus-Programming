@@ -15,7 +15,9 @@ int main() {
     for(i=0 ; i<t ; i++)
     {
         int num = 0;
-        int A = 65;
+        int A = 64;
+        //int A = 65;
+        
         cout<<"Enter a string: ";
         
         //cin.getline(S,250);
@@ -28,8 +30,12 @@ int main() {
         //for(j=0 ; S[j]!='\0' ; j++)
         for(j=0 ; j<S_len ; j++)
         {
-           num=S[j]-A+1;
-           cout<<num;
+            if(S[j]>='A' && S[j]<='Z')
+            {
+               num=S[j]-A;
+               //num=S[j]-A+1;
+               cout<<num;
+            }
         }
            cout<<endl;
      }
