@@ -45,3 +45,39 @@ Output:Count = 4
 Input :Enter a string: His last play was a big hit
 Output:Count = 7
 */
+
+
+/*
+
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    int t;
+    cout << "How many input are you taking = ";
+    cin >> t;
+    cin.ignore(); // Consume the newline character after inputting the number of inputs
+
+    for (int i = 0; i < t; i++) {
+        char S[10000];
+        
+        cout << "Enter a string: ";
+        cin.getline(S, 10000);
+
+        int count = 0;
+        char *word = strtok(S, ",!;?. ");
+        
+        while (word != NULL) {
+            count++;
+            word = strtok(NULL, ",!;?. ");
+        }
+
+        cout << "Count = " << count << endl;
+    }
+
+    return 0;
+}
+
+*/
