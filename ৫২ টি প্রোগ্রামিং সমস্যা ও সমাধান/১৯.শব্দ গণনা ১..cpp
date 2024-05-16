@@ -57,3 +57,55 @@ Output:Count = 4
 Input :Enter a string: His last play was a big hit
 Output:Count = 7
 */
+
+
+
+/*
+
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    
+    int t,i,j;
+    char S[10000];
+    
+    cout<<"How many input are you taking = ";
+    cin>>t;
+    cin.ignore();// Consume the newline character after inputting the string
+    
+    for(i=0 ; i<t ; i++)
+    {
+        int count=0;
+        bool inWord = false;
+        
+        cout<<"Enter a string: ";
+        
+        //cin.getline(S,250);
+        cin.get(S,10000);
+        cin.ignore();// Consume the newline character after inputting the string
+        
+        
+        
+        for(j=0 ; S[j]!='\0' ; j++)
+        {
+            if(S[j]!=' ' && !inWord)
+            {
+                count++;
+                inWord = true;
+            }
+            else if(S[j]==' ')
+            {
+                inWord = false;
+            }
+        }
+   
+        cout<<"Count = "<<count<<endl;
+     }
+    
+    return 0;
+}
+
+*/
