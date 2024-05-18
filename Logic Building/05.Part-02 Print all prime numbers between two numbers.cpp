@@ -439,3 +439,76 @@ Input : Strat = 200
         end = 350
 Output: 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 
 */
+
+
+
+/*
+#include <iostream>
+using namespace std;
+#include <math.h>
+#define size 100001
+bool array [size];
+    /*
+    int arrayIng[10];
+    cout << sizeof(arrayIng)<<endl;//40
+    
+    bool arrayBool[10];
+    cout << sizeof(arrayBool);//10
+    */
+
+
+void sieve()
+{
+    int i,j,root;
+
+     for(i=2; i<size; i++)
+    {
+        array[i]=1;
+    }
+
+    root = sqrt(size);
+
+    //for(i=2; i*i<=size; i++)
+    for(i=2; i<=root; i++)
+    {
+        if(array[i]==1)
+        {
+            //for(j=2; j<=root; j++)
+             for(j=2; i*j<=size; j++)
+            {
+                array[i * j] = 0;
+            }
+        }
+    }
+}
+
+
+int main()
+{
+    int T, a, b,i, count;
+    sieve();
+    
+    cout << "array = " <<sizeof(array)<<endl;
+
+    cout<<"How many input are you taking = ";
+    cin>>T;
+    while(T--)
+    {
+        cout<<"Strat = ";
+        cin>>a;
+        cout<<"end = ";
+        cin>>b;
+
+        count = 0;
+        for(i= a; i<= b; i++)
+        {
+            if(array[i])
+            {
+                cout<<i<<" ";
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+*/
