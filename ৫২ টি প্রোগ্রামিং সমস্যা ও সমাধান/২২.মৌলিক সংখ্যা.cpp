@@ -79,7 +79,8 @@ Output: 332
 using namespace std;
 #include <math.h>
 #define size 100001
-int array [size];
+//int array [size];
+bool array[size];
 
 
 void sieve()
@@ -138,6 +139,7 @@ int main()
 }
 
 */
+
 
 /*
 How many input are you taking = 5
