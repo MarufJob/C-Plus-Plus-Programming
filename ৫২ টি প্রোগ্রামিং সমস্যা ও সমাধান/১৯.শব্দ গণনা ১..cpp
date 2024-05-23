@@ -109,3 +109,45 @@ int main() {
 }
 
 */
+
+
+/*
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    
+    int t,i,j;
+    
+    cout<<"How many input are you taking = ";
+    cin>>t;
+    cin.ignore();// Consume the newline character after inputting the string
+    
+    for(i=0 ; i<t ; i++)
+    {
+        int count=0;
+        bool inWord = false;
+        string S;
+        
+        cout<<"Enter a string: ";
+        getline(cin, S); // Read the entire line
+
+        for(char c : S)
+        {
+            if(c!=' ' && !inWord)
+            {
+                count++;
+                inWord = true;
+            }
+            else if(c==' ')
+            {
+                inWord = false;
+            }
+        }
+        cout<<"Count = "<<count<<endl;
+     }
+    return 0;
+}
+*/
