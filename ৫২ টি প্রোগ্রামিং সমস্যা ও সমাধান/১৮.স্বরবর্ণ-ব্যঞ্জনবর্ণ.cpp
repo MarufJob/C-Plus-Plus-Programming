@@ -103,3 +103,53 @@ int main()
 }
 
 */
+
+
+
+
+/*
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, T;
+
+    cout << "How many input are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    for (i = 1; i <= T; i++)
+    {
+        //char str[10001];
+        string str;
+        
+        cout << "Give a string: ";
+        getline(cin,str);
+        // cin.get(str, 10001);
+        // cin.ignore(); // Consume the newline character after inputting the string
+        char consonant[9000] = {};
+        int k=0;
+        
+            //for (int j = 0,k = 0; str[j] != '\0'; j++)
+            for (char ch: str)
+            {
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                    {
+                         cout<<ch;
+                    }
+                else if(ch!=' ')
+                    {
+                        consonant[k]=ch;
+                        k++;
+                    }
+                
+            }
+            cout<<endl;
+            cout<<consonant<<endl;
+    }
+    return 0;
+}
+
+*/
