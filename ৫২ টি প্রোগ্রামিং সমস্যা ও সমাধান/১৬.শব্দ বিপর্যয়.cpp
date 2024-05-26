@@ -97,6 +97,48 @@ int main() {
 
 
 /*
+
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int T;
+    cout << "How many input are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character after inputting the number of inputs
+
+    for (int i = 0; i < T; i++) {
+        cout << "Give a string: ";
+        string str;
+        getline(cin, str); // Read the entire line into a string
+
+        istringstream iss(str);
+        string word;
+        string result;
+
+        while (iss >> word) {
+            reverse(word.begin(), word.end()); // Reverse each word
+            if (!result.empty()) {
+                result += " "; // Add space between words
+            }
+            result += word; // Add the reversed word to the result
+        }
+
+        cout << result << endl;
+    }
+
+    return 0;
+}
+
+
+*/
+
+
+/*
 #include <iostream>
 #include <cstring>
 //#include <string>
