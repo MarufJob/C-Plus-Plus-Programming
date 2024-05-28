@@ -109,3 +109,75 @@ int main()
 }
 
 */
+
+
+
+/*
+#include <iostream>
+//#include <cctype> //For tolower function
+using namespace std;
+
+int main()
+{
+    int i, T;
+    //char str[1000];
+    string str;
+
+    cout << "How many input are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    for (i = 1; i <= T; i++)
+    {
+        cout << "Give a string: ";
+        getline(cin,str);
+        int count[26]={};
+        
+        for (char c:str)
+        {
+            char lowerCh = tolower(c);
+            
+            if (lowerCh >= 'a' && lowerCh <= 'z')
+            {
+                 count[lowerCh-'a']++;
+            }
+        }
+            
+        for(int i=0 ; i<=25 ; i++)
+        {
+            if(count[i]>0)
+            {
+                char c='a'+i;
+                cout <<c<<" = "<<count[i]<< endl;
+            }
+        }
+        
+    }
+    return 0;
+}
+
+*/
+
+
+
+/*
+How many input are you taking = 3
+Input: Give a string: Hello
+Output:e = 1
+       h = 1
+       l = 2
+       o = 1
+Input: Give a string: BABY
+Output:a = 1
+       b = 2
+       y = 1
+Input: Give a string: Programming
+Output:a = 1
+       g = 2
+       i = 1
+       m = 2
+       n = 1
+       o = 1
+       p = 1
+       r = 2
+*/
