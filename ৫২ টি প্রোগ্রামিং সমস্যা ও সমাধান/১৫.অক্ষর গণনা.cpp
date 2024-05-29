@@ -133,6 +133,7 @@ int main()
         getline(cin,str);
         int count[26]={};
         
+        //for (int c:str)
         for (char c:str)
         {
             char lowerCh = tolower(c);
@@ -157,7 +158,6 @@ int main()
 }
 
 */
-
 
 
 /*
