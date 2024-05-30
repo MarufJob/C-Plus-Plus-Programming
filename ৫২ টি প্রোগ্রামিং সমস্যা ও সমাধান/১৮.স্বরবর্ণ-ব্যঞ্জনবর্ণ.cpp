@@ -133,6 +133,7 @@ int main()
         int k=0;
         
             //for (int j = 0,k = 0; str[j] != '\0'; j++)
+            //for (int ch: str)
             for (char ch: str)
             {
                 if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
