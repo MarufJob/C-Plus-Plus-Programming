@@ -25,6 +25,8 @@ int main() {
         
         
         S_len = strlen(S);
+        // cout<<S_len<<endl;
+        // cout<<sizeof(S)/sizeof(S[0])<<endl;
         
         //for(j=0 ; S[j]!='\0' ; j++)
         for(j=0 ; j<S_len ; j++)
