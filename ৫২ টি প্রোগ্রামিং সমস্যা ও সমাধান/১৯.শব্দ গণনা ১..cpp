@@ -153,3 +153,55 @@ int main() {
     return 0;
 }
 */
+
+
+
+/*
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    
+    int t,i,j,S_len;
+    char S[10000];
+    
+    cout<<"How many input are you taking = ";
+    cin>>t;
+    cin.ignore();// Consume the newline character after inputting the string
+    
+    for(i=0 ; i<t ; i++)
+    {
+        int count=0,j=0;
+        
+        cout<<"Enter a string: ";
+        
+        //cin.getline(S,250);
+        cin.get(S,10000);
+        cin.ignore();// Consume the newline character after inputting the string
+        
+        S_len = strlen(S);
+        // cout<<S_len<<endl;
+        // cout<<S[S_len-1]<<endl;
+        
+        for(char c:S)
+        {
+            //cout<<c<<endl;
+            j++;
+            
+            if(c==' ')
+            {
+                count++;
+                //cout<<"space = "<<count<<endl;
+            }
+            if(c==S[S_len-1] && S_len==j)
+            {
+                break;
+            }
+        }
+        cout<<"Count = "<<count+1<<endl;
+     }
+    return 0;
+}
+*/
