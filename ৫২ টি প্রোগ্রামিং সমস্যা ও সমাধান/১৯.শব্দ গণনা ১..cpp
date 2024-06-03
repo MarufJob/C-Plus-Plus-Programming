@@ -189,12 +189,14 @@ int main() {
         {
             //cout<<c<<endl;
             j++;
+            cout<<S_len<<" = "<<j<<" = "<<c<<endl;
             
             if(c==' ')
             {
                 count++;
                 //cout<<"space = "<<count<<endl;
             }
+            
             if(c==S[S_len-1] && S_len==j)
             {
                 break;
