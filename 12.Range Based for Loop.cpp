@@ -46,6 +46,8 @@ int main() {
     }
     
     cout<<endl;
+    
+    //for(auto c : str)  //auto c: The auto keyword tells the compiler to automatically deduce the type of c from the elements of str. If str is a std::string, c will be a type char.
     for(char c : str)
     {
         cout<<c<<" ";
@@ -54,13 +56,15 @@ int main() {
     
     cout<<"Enter a string: ";
     getline(cin,S);
-    
+
+    //for(auto c : S)  //auto c: The auto keyword tells the compiler to automatically deduce the type of c from the elements of str. If str is a std::string, c will be of type char.
     for(char c : S)
     {
         cout<<c<<" ";
     }
     return 0;
 }
+
 
 /*
  Enter a string: Md. Fazley Atif Maruf
