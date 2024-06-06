@@ -177,7 +177,7 @@ int main() {
         
         cout<<"Enter a string: ";
         
-        //cin.getline(S,250);
+        //cin.getline(S,10000);
         cin.get(S,10000);
         cin.ignore();// Consume the newline character after inputting the string
         
