@@ -24,7 +24,7 @@ int main()
         }
 
         //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
-        
+        //cout<<(num%2==0?"even":"odd")<<endl;
     }
 
     return 0;
@@ -33,7 +33,7 @@ int main()
 
 
 /*
-        How many number you taking = 3
+How many number you taking = 3
 Input : Give a number = 100
 Output :even
 
