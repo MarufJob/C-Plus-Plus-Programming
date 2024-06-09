@@ -36,6 +36,7 @@ int main()
         {
             cout<<"odd"<<endl;
         }
+        //(last_digit%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
     }
     
     return 0;
@@ -50,6 +51,9 @@ Output: even
 Input : Give a number = 1111
 Output: odd
 */
+
+
+
 /*
 #include <iostream>
 using namespace std;
