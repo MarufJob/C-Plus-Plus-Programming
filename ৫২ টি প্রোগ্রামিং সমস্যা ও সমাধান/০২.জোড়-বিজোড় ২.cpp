@@ -37,10 +37,12 @@ int main()
             cout<<"odd"<<endl;
         }
         //(last_digit%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
+        //cout<<(last_digit%2==0?"even":"odd")<<endl;
     }
     
     return 0;
 }
+
 
 /*
 How many number you taking = 3
