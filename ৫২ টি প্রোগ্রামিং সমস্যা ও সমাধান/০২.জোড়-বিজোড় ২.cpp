@@ -55,6 +55,36 @@ Output: odd
 */
 
 
+/*
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int T;
+    string num;
+
+    cout << "How many numbers are you taking = ";
+    cin >> T;
+
+    for (int i = 0; i < T; ++i)
+    {
+        cout << "Give a number = ";
+        cin >> num;
+
+        char last_digit = num.back(); // Get the last character of the string
+
+        // Convert char to int and check if even
+        cout << ((last_digit - '0') % 2 == 0 ? "even" : "odd") << endl;
+    }
+    
+    return 0;
+}
+
+*/
+
 
 /*
 #include <iostream>
