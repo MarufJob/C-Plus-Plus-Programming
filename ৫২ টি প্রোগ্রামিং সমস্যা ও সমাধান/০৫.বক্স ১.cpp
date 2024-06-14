@@ -45,3 +45,33 @@ Output :*****
         *****
         *****
 */
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,j,k,T,num;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give a number = ";
+        cin>>num;
+
+            string row(num,'*');
+            
+            for(k=1 ; k<=num ; k++)
+            {
+                cout<<row<<endl;
+            }
+            
+    }
+    return 0;
+}
+*/
