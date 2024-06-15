@@ -68,9 +68,9 @@ int main()
             
             for(k=1 ; k<=num ; k++)
             {
-                cout<<row<<endl;
+                //cout<<row<<endl;
+                cout << row << '\n';
             }
-            
     }
     return 0;
 }
