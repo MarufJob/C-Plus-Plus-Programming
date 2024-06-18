@@ -139,3 +139,41 @@ int main()
     return 0;
 }
 */
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+void myFuntion()
+{
+    
+}
+
+int main()
+{
+    int i,j,k,T,num;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give a number = ";
+        cin>>num;
+
+            string row(num,'*');
+            
+            // for(k=1 ; k<=num ; k++)
+            // {
+            //     //cout<<row<<endl;
+            //     cout << row << '\n';
+            // }
+            
+            myFunction();
+    }
+    return 0;
+}
+*/
