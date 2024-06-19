@@ -142,14 +142,19 @@ int main()
 
 
 
-
 /*
 #include <iostream>
 using namespace std;
 
-void myFuntion()
+void myFunction(int num)
 {
+    string row(num,'*');
     
+    for(int k=1 ; k<=num ; k++)
+    {
+        //cout<<row<<endl;
+        cout << row << '\n';
+    }
 }
 
 int main()
@@ -163,17 +168,10 @@ int main()
     {
         cout<<"Give a number = ";
         cin>>num;
-
-            string row(num,'*');
-            
-            // for(k=1 ; k<=num ; k++)
-            // {
-            //     //cout<<row<<endl;
-            //     cout << row << '\n';
-            // }
-            
-            myFunction();
+        
+        myFunction(num);
     }
+    
     return 0;
 }
 */
