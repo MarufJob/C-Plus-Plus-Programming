@@ -175,3 +175,39 @@ int main()
     return 0;
 }
 */
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+string myFunction(int num1)
+{
+    string row(num1,'*');
+    
+    return row;
+}
+
+int main()
+{
+    int i,j,k,T,num;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give a number = ";
+        cin>>num;
+        
+        for(int k=1 ; k<=num ; k++)
+        {
+            string ABC = myFunction(num);
+            cout<<ABC<<endl;
+        }
+    }
+    return 0;
+}
+*/
