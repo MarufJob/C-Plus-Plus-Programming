@@ -45,3 +45,9 @@ Output :Sum = 3
 Input :Give a number = 96587
 Output :Sum = 16
 */
+
+
+while(j<=5)
+        {
+            
+        }
