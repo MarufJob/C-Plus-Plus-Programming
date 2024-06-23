@@ -72,8 +72,12 @@ int main()
         m = num[0]- 48;
         n = num[4]- 48;
         sum= m+n;
- 
         cout<<"Sum = "<<sum;
+
+        // sum = (num[0]- 48) + num[4]- 48;
+        // cout<<"Sum = "<<sum;
+        
+        //cout<<"Sum = "<<(num[0]- 48) + num[4]- 48;
         cout<<endl;
     }
     return 0;
