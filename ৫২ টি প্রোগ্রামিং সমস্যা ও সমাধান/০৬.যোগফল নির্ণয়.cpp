@@ -90,3 +90,42 @@ while(j<=5)
         {
             
         }
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,j,k,T,num,m,n,sum;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        sum=0;
+        //char num[5];
+        string num;
+        cout<<"Give a number = ";
+        cin>>num;
+        // for(j=0 ; j<=4 ; j++)
+        // {
+        //     cin>>num[j];
+        // }
+        m = num[0]- 48;
+        n = num[4]- 48;
+        sum= m+n;
+        cout<<"Sum = "<<sum;
+
+        // sum = (num[0]- 48) + num[4]- 48;
+        // cout<<"Sum = "<<sum;
+        
+        //cout<<"Sum = "<<(num[0]- 48) + num[4]- 48;
+        cout<<endl;
+    }
+    return 0;
+}
+*/
