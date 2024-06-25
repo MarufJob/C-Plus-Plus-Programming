@@ -1,10 +1,9 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int i,j,k,T,num,m,n,sum;
+    int i,j,m,num,T,sum;
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -32,6 +31,8 @@ int main()
 }
 
 
+
+
 /*
 How many number you taking = 5
 Input :Give a number = 12345
@@ -54,7 +55,7 @@ using namespace std;
 
 int main()
 {
-    int i,j,k,T,num,m,n,sum;
+    int i,j,m,n,T,sum;
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -66,30 +67,23 @@ int main()
         cout<<"Give a number = ";
         
         for(j=0 ; j<=4 ; j++)
-      {
-         cin>>num[j];
-      }
-        m = num[0]- 48;
-        n = num[4]- 48;
-        sum= m+n;
-        cout<<"Sum = "<<sum;
+        {
+            cin>>num[j];
+        }
+        // m = num[0]- 48;
+        // n = num[4]- '0';
+        // sum= m+n;
+        // cout<<"Sum = "<<sum;
 
-        // sum = (num[0]- 48) + num[4]- 48;
+        // sum = (num[0]- 48) + (num[4]- '0');
         // cout<<"Sum = "<<sum;
         
-        //cout<<"Sum = "<<(num[0]- 48) + num[4]- 48;
+        cout<<"Sum = "<<(num[0]- 48) + (num[4]- '0');
         cout<<endl;
     }
     return 0;
 }
 */
-
-
-
-while(j<=5)
-        {
-            
-        }
 
 
 
@@ -99,7 +93,7 @@ using namespace std;
 
 int main()
 {
-    int i,j,k,T,num,m,n,sum;
+    int i,m,n,T,sum;
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -107,23 +101,19 @@ int main()
     for(i=1 ; i<=T ; i++)
     {
         sum=0;
-        //char num[5];
         string num;
         cout<<"Give a number = ";
         cin>>num;
-        // for(j=0 ; j<=4 ; j++)
-        // {
-        //     cin>>num[j];
-        // }
+        
         m = num[0]- 48;
-        n = num[4]- 48;
+        n = num[4]- '0';
         sum= m+n;
         cout<<"Sum = "<<sum;
 
-        // sum = (num[0]- 48) + num[4]- 48;
+        // sum = (num[0]- 48) + (num[4]- '0');
         // cout<<"Sum = "<<sum;
         
-        //cout<<"Sum = "<<(num[0]- 48) + num[4]- 48;
+        //cout<<"Sum = "<<(num[0]- 48) + (num[4]- '0');
         cout<<endl;
     }
     return 0;
