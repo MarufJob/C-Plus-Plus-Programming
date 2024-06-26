@@ -79,3 +79,53 @@ int main()
     return 0;
 }
 */
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, T;
+    char str[100];
+
+
+    cout << "How many numbers are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    for (i = 1; i <= T; i++)
+    {
+        int num = 0;
+        bool pass = 1;
+
+        cout << "Give a string: ";
+        cin.get(str, 100);
+        cin.ignore(); // Consume the newline character after inputting the string
+
+        for (int i = 0; str[i] != '\0'; i++)
+        {
+
+            if (str[i] != ' ' && pass)
+            {
+                num++;
+                pass = 0;
+
+                //cout<<"num"<<i<<endl;
+            }
+
+            else if (str[i] == ' ' && !pass)
+            {
+                pass = 1;
+                
+                //cout<<"num"<<i<<endl;
+            }
+        }
+        cout <<num<< endl;
+    }
+    return 0;
+}
+*/
