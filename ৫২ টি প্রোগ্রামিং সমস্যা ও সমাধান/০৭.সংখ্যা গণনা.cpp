@@ -129,3 +129,57 @@ int main()
     return 0;
 }
 */
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, T;
+    //char str[100];    ///cin.getline(str,100);
+    string str;    ///getline(cin, str);
+
+    cout << "How many numbers are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    for (i = 1; i <= T; i++)
+    {
+        int num = 0;
+        bool pass = 0;
+
+        cout << "Give a string: ";
+        // cin.get(str, 100);
+        // cin.ignore(); // Consume the newline character after inputting the string
+        //cin.getline(str,100);
+        
+        getline(cin, str);    ///for -> string str;
+
+        //int i=0;
+        for (char c: str)    ///Range loop working for string variable
+        {
+            //i++;
+            if (c == ' ')
+            {
+                pass = 0;
+
+                //cout<<"num"<<i<<" = "<<c<<endl;
+            }
+
+            else if (!pass)
+            {
+                pass = 1;
+                num++;
+                
+                //cout<<"num"<<i<<" = "<<c<<endl;
+            }
+        }
+        cout <<num<< endl;
+    }
+    return 0;
+}
+*/
