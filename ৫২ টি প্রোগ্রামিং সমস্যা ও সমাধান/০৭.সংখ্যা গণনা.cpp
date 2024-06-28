@@ -183,3 +183,55 @@ int main()
     return 0;
 }
 */
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, T;
+    char str[10000000];
+
+    cout << "How many numbers are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    for (i = 1; i <= T; i++)
+    {
+        int num = 0;
+        //char line[] = "";
+        char *p, *e;
+        long input;
+        //int count = 0;
+        p = str;
+        cout << "Give a string: ";
+        cin.get(str, 100);
+        cin.ignore(); // Consume the newline character after inputting the string
+
+        // for (int i = 0; str[i] != '\0'; i++)
+        // {
+        //     if (str[i] == ' ')
+        //     {
+        //         num++;
+        //     }
+        // }
+        
+        
+        for (p = str; ;p = e)
+        {
+            input = strtol(p, &e, 10);
+            if (p == e)
+            {
+                break;
+            }
+            num++;
+        }
+        cout <<num<< endl;
+    }
+    return 0;
+}
+*/
