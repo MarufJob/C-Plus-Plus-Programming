@@ -189,12 +189,14 @@ int main()
 
 /*
 #include <iostream>
+#include <stdlib.h>
+
 using namespace std;
 
 int main()
 {
     int i, T;
-    char str[10000000];
+    char str[1000000];
 
     cout << "How many numbers are you taking = ";
     cin >> T;
@@ -211,14 +213,6 @@ int main()
         cout << "Give a string: ";
         cin.get(str, 100);
         cin.ignore(); // Consume the newline character after inputting the string
-
-        // for (int i = 0; str[i] != '\0'; i++)
-        // {
-        //     if (str[i] == ' ')
-        //     {
-        //         num++;
-        //     }
-        // }
         
         
         for (p = str; ;p = e)
