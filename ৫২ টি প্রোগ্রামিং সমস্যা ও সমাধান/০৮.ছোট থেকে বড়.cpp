@@ -55,3 +55,49 @@ Output :Case 2: 1 2 3
 Input : Give three number = 10 5 6
 Output :Case 3: 5 6 10
 */
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,j,k,T,temp,kase;
+    int num[3];
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(kase=1 ; kase<=T ; kase++)
+    {
+        cout<<"Give three number = ";
+        for(i=0; i<=2; i++)
+        {
+            cin>>num[i];
+        }
+        
+        for(i=0; i<=1; i++)
+        {
+            for(j=i+1; j<=2; j++)
+            {
+                if(num[i]>num[j])
+                {
+                    temp=num[i];
+                    num[i]=num[j];
+                    num[j]=temp;
+                }
+            }
+        }
+        
+        cout<<"Case "<<kase<<": ";
+        for(i=0; i<=2; i++)
+        {
+            cout<<num[i]<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+*/
