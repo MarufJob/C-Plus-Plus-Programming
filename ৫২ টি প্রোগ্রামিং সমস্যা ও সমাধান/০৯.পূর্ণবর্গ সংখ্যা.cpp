@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int i,T,num,sq_root;
+    int i,T,num;
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -14,12 +14,16 @@ int main()
         cout<<"Give a number = ";
         cin>>num;
 
-        sq_root = sqrt(num);
+        double sq_root = sqrt(num);
         // cout<<sq_root<<endl;
         // cout<<sqrt(num)<<endl;
 
         //if(sq_root * sq_root == num)
-        if(sq_root==sqrt(num))
+        //if(sq_root==sqrt(num))
+        //if (ceil(sq_root) == floor(sq_root))
+        
+        double difference = ceil(sq_root) - floor(sq_root);
+        if(difference < 0.000001)
         {
             cout<<"Yes"<<endl;
         }
