@@ -69,6 +69,40 @@ using namespace std;
 
 int main()
 {
+    int i,j,T,count,mod,num;
+    
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        count=0;
+        cout<<"Give a number = ";
+        cin>>num;
+
+        for(j=5; j<=num; j=j+5)
+        {
+                mod=j;
+                while(mod%5==0)
+                {
+                    count++;
+                    mod=mod/5;
+                }
+        }
+        cout<<count<<endl;
+    }
+    return 0;
+}
+*/
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
     int i,T,count,num;
     
     cout<<"How many number you taking = ";
