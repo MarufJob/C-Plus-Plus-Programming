@@ -103,6 +103,65 @@ using namespace std;
 
 int main()
 {
+    int T, num;
+    int iteration;
+
+    cout << "How many numbers are you taking = ";
+    cin >> T;
+
+    for (int i = 1; i <= T; ++i)
+    {
+        cout << "Give a number = ";
+        cin >> num;
+
+        int count = 0,iteration = 0;
+        for (int j = 5; num/j >= 1; j = j*5)
+        {
+            count += num/j;
+            //iteration++;
+            //cout <<"j = "<< j << endl;
+        
+        }
+        cout << count << endl;
+        //cout << "Iteration = "<< iteration << endl;
+    }
+    return 0;
+}
+*/
+
+
+
+/*
+How many number you taking = 3
+Input :Give a number = 125
+Output: j = 5   ->  125/5   = 25
+        j = 25  ->  125/25  =  5
+        j = 125 ->  125/125 =  1
+                              31
+        Iteration = 3
+Input :Give a number = 375
+Output: j = 5   ->  375/5    = 75
+        j = 25  ->  375/25   = 15
+        j = 125 ->  375/125  =  3
+                               93
+        Iteration = 3
+Input :Give a number = 625
+Output: j = 5   ->  625/5   = 125
+        j = 25  ->  625/25  =  25
+        j = 125 ->  625/125 =   5
+        j = 625 ->  625/625 =   1
+                              156
+        Iteration = 4
+*/
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
     int i,T,count,num;
     
     cout<<"How many number you taking = ";
@@ -124,6 +183,7 @@ int main()
     return 0;
 }
 */
+
 
 
 /*
