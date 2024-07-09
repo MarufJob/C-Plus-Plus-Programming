@@ -115,7 +115,8 @@ int main()
         cin >> num;
 
         int count = 0,iteration = 0;
-        for (int j = 5; num/j >= 1; j = j*5)
+        //for (int j = 5; num/j >= 1; j = j*5)
+        for (int j = 5; num >= j; j = j*5)
         {
             count += num/j;
             //iteration++;
