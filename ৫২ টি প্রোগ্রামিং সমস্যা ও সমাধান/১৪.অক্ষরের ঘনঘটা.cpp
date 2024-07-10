@@ -13,7 +13,7 @@ int main()
 
     for (i = 1; i <= T; i++)
     {
-        int num = 0;
+        int count = 0;
         cout << "Give a string: ";
         cin.get(str, 100);
         cin.ignore(); // Consume the newline character after inputting the string
@@ -24,16 +24,18 @@ int main()
         {
             if (str[i] == c)
             {
-                num++;
+                count++;
             }
         }
-        if(num>0)
-        cout <<"Occurrence of " <<"'"<<c<<"'"<<" in "<<"'"<<str<<"' = "<<num<< endl;
+        
+        if(count>0)
+        cout <<"Occurrence of " <<"'"<<c<<"'"<<" in "<<"'"<<str<<"' = "<<count<< endl;
         else
         cout<<"'"<<c<<"'"<<" is not present"<<endl;
     }
     return 0;
 }
+
 
 
 /*
@@ -65,7 +67,7 @@ int main()
 
     for (i = 1; i <= T; i++)
     {
-        int num = 0;
+        int count = 0;
         cout << "Give a string: ";
         getline(cin,str);
         cin >> c;
@@ -75,12 +77,13 @@ int main()
         {
             if (i == c)
             {
-                num++;
+                count++;
             }
             //cout<<i<<endl;
         }
-        if(num>0)
-        cout <<"Occurrence of " <<"'"<<c<<"'"<<" in "<<"'"<<str<<"' = "<<num<< endl;
+        
+        if(count>0)
+        cout <<"Occurrence of " <<"'"<<c<<"'"<<" in "<<"'"<<str<<"' = "<<count<< endl;
         else
         cout<<"'"<<c<<"'"<<" is not present"<<endl;
     }
@@ -98,4 +101,53 @@ Output:Occurrence of 'l' in 'hello world' = 3
 Input: Give a string: hello world
        a
 Output:'a' is not present
+*/
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int Count(string str, char c)
+{
+    int count = 0;
+    for (char i : str)
+        {
+            if (i == c)
+            {
+                count++;
+            }
+            //cout<<i<<endl;
+        }
+    return count;
+}
+
+int main()
+{
+    int i, T;
+    string str;
+    char c;
+
+    cout << "How many input are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    for (i = 1; i <= T; i++)
+    {
+        int num = 0;
+        cout << "Give a string: ";
+        getline(cin,str);
+        cin >> c;
+        cin.ignore();
+
+        int count = Count(str,c);
+        
+        if(count>0)
+        cout <<"Occurrence of " <<"'"<<c<<"'"<<" in "<<"'"<<str<<"' = "<<count<< endl;
+        else
+        cout<<"'"<<c<<"'"<<" is not present"<<endl;
+    }
+    return 0;
+}
 */
