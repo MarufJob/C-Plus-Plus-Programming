@@ -108,7 +108,6 @@ int main()
 
 
 /*
-
 #include <iostream>
 using namespace std;
 
@@ -134,7 +133,8 @@ int main()
         
             //for (int j = 0,k = 0; str[j] != '\0'; j++)
             //for (int ch: str)
-            for (char ch: str)
+            //for (char ch: str)
+            for (auto ch: str)
             {
                 if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
                     {
@@ -152,5 +152,4 @@ int main()
     }
     return 0;
 }
-
 */
