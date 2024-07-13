@@ -134,18 +134,20 @@ int main()
             //for (int j = 0,k = 0; str[j] != '\0'; j++)
             //for (int ch: str)
             //for (char ch: str)
-            for (auto ch: str)
+            //for (auto ch: str)
+            for (size_t ch: str)
             {
                 if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
                     {
-                         cout<<ch;
+                         //cout<<ch;
+                         char Ch = ch;  //for (size_t ch: str) -> int ch to character
+                         cout<<Ch;
                     }
                 else if(ch!=' ')
                     {
                         consonant[k]=ch;
                         k++;
                     }
-                
             }
             cout<<endl;
             cout<<consonant<<endl;
