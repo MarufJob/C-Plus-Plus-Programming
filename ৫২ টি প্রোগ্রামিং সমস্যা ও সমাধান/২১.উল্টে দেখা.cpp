@@ -38,7 +38,6 @@ int main()
 
 
 /*
-
 How many input are you taking = 5
 Input: Give a string: string
 Output:gnirts
@@ -51,6 +50,7 @@ Output:emrofytrapgibaevagyeht
 Input: Give a string: shewastwentytwoyearsold
 Output:dlosraeyowtytnewtsawehs
 */
+
 
 
 /*
@@ -89,5 +89,47 @@ int main()
     }
     return 0;
 }
+*/
 
+
+
+
+/*
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+void swap(char *str,int s_len);
+
+int main()
+{
+    int i, T;
+
+    cout << "How many input are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    while(T--)
+    {
+        int s_len=0;
+        cout << "Give a string: ";
+        char str[1000]={};
+        cin.get(str, 1000);
+        cin.ignore(); // Consume the newline character after inputting the string
+        
+        s_len=strlen(str);
+        
+        swap(str,s_len);
+    }
+    return 0;
+}
+
+void swap(char *str,int s_len)
+{
+    for (int j = s_len-1, i=0; i<j ; j--,i++)
+    {
+        swap(str[i],str[j]);
+    }
+    cout<<str<<endl;
+}
 */
