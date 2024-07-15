@@ -93,14 +93,14 @@ int main()
 
 
 
-
 /*
 #include <iostream>
 #include <cstring>
 using namespace std;
 
-// void swap(char str[])
+//void swap(char str[]);
 //void swap(char* str);
+//void swap(char *str);
 //void swap(char str[],int s_len);
 void swap(char *str,int s_len);
 
