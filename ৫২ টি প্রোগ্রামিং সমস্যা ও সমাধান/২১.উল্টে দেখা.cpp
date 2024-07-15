@@ -117,7 +117,7 @@ int main()
         cin.get(str, 1000);
         cin.ignore(); // Consume the newline character after inputting the string
         
-        s_len=strlen(str);
+        s_len=strlen(str);   //for character array
         
         swap(str,s_len);
     }
@@ -125,6 +125,50 @@ int main()
 }
 
 void swap(char *str,int s_len)
+{
+    for (int j = s_len-1, i=0; i<j ; j--,i++)
+    {
+        swap(str[i],str[j]);
+    }
+    cout<<str<<endl;
+}
+*/
+
+
+
+/*
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+//void swap(string str);
+void swap(string str,int s_len);
+
+int main()
+{
+    int i, T;
+
+    cout << "How many input are you taking = ";
+    cin >> T;
+    cin.ignore(); // Consume the newline character
+
+    while(T--)
+    {
+        int s_len=0;
+        cout << "Give a string: ";
+        string str;
+        getline(cin,str);
+        
+        s_len=str.size();   //for string
+        //s_len=str.length();
+        cout<<s_len<<endl;
+        
+        swap(str,s_len);
+    }
+    return 0;
+}
+
+void swap(string str,int s_len)
 {
     for (int j = s_len-1, i=0; i<j ; j--,i++)
     {
