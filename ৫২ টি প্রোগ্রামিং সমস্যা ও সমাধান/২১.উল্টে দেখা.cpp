@@ -99,6 +99,9 @@ int main()
 #include <cstring>
 using namespace std;
 
+// void swap(char str[])
+//void swap(char* str);
+//void swap(char str[],int s_len);
 void swap(char *str,int s_len);
 
 int main()
@@ -142,6 +145,7 @@ void swap(char *str,int s_len)
 using namespace std;
 
 //void swap(string str);
+//void swap(string& str);
 void swap(string str,int s_len);
 
 int main()
