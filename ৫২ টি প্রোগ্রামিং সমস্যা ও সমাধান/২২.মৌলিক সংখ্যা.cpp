@@ -5,8 +5,7 @@ using namespace std;
 
 int main() 
 {
-    
-    int t,i,j,k,l,num,count;
+    int i,j,k,t,num1,num2,count;
     
     cout<<"How many input are you taking = ";
     cin>>t;
@@ -14,18 +13,17 @@ int main()
     
     for(i=1 ; i<=t ; i++)
     {
-        //int i,j,k,mid,num;
         count = 0;
 
         cout<<"Strat = ";
-        cin>>l;
+        cin>>num1;
         cout<<"end = ";
-        cin>>num;
+        cin>>num2;
 
 
-        for(k=l ; k<=num ; k++)
+        for(k=num1 ; k<=num2 ; k++)
         {
-            int countNum = 0,num2 = 0;
+            int countNum = 0;//loop_iteration = 0;
     
             for(j=2 ; j*j<=k ; j++)
             {
@@ -34,21 +32,21 @@ int main()
                     countNum = 1;
                     break;
                 }
-                //num2++;
+                //loop_iteration++;
             }
     
             if(countNum == 0 && k >1)
                 count++;
-                //cout<<k<<" -> "<<num2<<endl;
+                //cout<<k<<" -> "<<loop_iteration<<endl;
                 //cout<<k<<" ";
         }
         //cout<<"T = "<<t<<"  "<<count<<endl;
         cout<<count<<endl;
         //cout<<endl;
     }
-    
     return 0;
 }
+
 
 
 /*
@@ -71,10 +69,9 @@ Output: 332
 */
 
 
-/**************************/
+
 
 /*
-
 #include <iostream>
 using namespace std;
 #include <math.h>
@@ -111,7 +108,7 @@ void sieve()
 
 int main()
 {
-    int T, a, b,i, count;
+    int i,T, num1, num2, count;
     sieve();
 
     cout<<"How many input are you taking = ";
@@ -119,12 +116,12 @@ int main()
     while(T--)
     {
         cout<<"Strat = ";
-        cin>>a;
+        cin>>num1;
         cout<<"end = ";
-        cin>>b;
+        cin>>num2;
 
         count = 0;
-        for(i= a; i<= b; i++)
+        for(i= num1; i<= num2; i++)
         {
             if(array[i])
             {
@@ -139,6 +136,7 @@ int main()
 }
 
 */
+
 
 
 /*
