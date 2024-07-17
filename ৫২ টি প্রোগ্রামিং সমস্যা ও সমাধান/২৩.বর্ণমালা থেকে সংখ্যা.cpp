@@ -63,9 +63,6 @@ Output:Count = 198523119202351420252023152551181915124
 
 /*
 #include <iostream>
-#include <cctype> // For isupper function
-#include <cstring> // For strlen function
-
 using namespace std;
 
 int main() {
@@ -75,25 +72,22 @@ int main() {
     cin.ignore(); // Consume the newline character after inputting the string
 
     for (int i = 0; i < t; i++) {
-        char S[100];
+        string str;
         cout << "Enter a string: ";
-        cin.get(S, 100);
-        cin.ignore(); // Consume the newline character after inputting the string
+        getline(cin,str);
+        
+        int num = 0;
 
-        int num = 0,count=0;
-        for (size_t j = 0; j < strlen(S); j++) 
+        for (char c:str) 
         {
-            if (isupper(S[j])) //Used isupper() function from <cctype> to check if a character is uppercase.
+            if (c>='A' && c<='Z')
             {
-                num = S[j] - 'A' + 1;
+                num = c - 'A' + 1;
                 cout << num;
             }
-            //count++;
         }
-        //cout <<count<< endl;
         cout << endl;
     }
-
     return 0;
 }
 */
@@ -118,6 +112,9 @@ Efficiency: size_t is typically defined as an unsigned integer of the same size 
 In simpler terms, using size_t for loop counters in situations involving sizes and indices is like using the right tool for the job. It ensures that your loop counters are always positive, matches the types returned by functions like strlen(), plays well with standard library functions, and is efficient for representing sizes and indices.
 */
 
+
+
+/*
 #include <iostream>
 #include <cctype> // For isupper function
 #include <cstring> // For strlen function
@@ -150,11 +147,11 @@ int main() {
 
     return 0;
 }
+*/
 
 
 
 /*
-
 Using size_t for the variable len is a good practice because size_t is an unsigned integer type defined in the C and C++ standard libraries, specifically designed to represent sizes of objects in bytes and array indexing. It is returned by the strlen function and other size-related functions.
 
 Here’s why using size_t is recommended:
@@ -163,5 +160,4 @@ Standard Return Type: Functions like strlen return a value of type size_t. Using
 Portability: size_t is defined in such a way that it can hold the size of the largest possible object on the target platform. This makes the code more portable and less prone to errors when compiled on different platforms.
 Non-Negative Values: Since size_t is an unsigned type, it cannot represent negative values, which makes it suitable for array indexing and size calculations, where negative values don’t make sense.
 Optimization: Some compilers and standard libraries can perform better optimizations when size_t is used because it aligns with their internal handling of sizes and array indices.
-
 */
