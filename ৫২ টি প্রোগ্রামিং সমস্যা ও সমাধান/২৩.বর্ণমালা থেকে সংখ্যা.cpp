@@ -19,11 +19,9 @@ int main() {
         //int A = 65;
         
         cout<<"Enter a string: ";
-        
         //cin.getline(S,250);
         cin.get(S,100);
         cin.ignore();// Consume the newline character after inputting the string
-        
         
         S_len = strlen(S);
         
@@ -32,8 +30,9 @@ int main() {
         {
             if(S[j]>='A' && S[j]<='Z')
             {
-               num=S[j]-A;
+               //num=S[j]-A;
                //num=S[j]-A+1;
+                num=S[j]-'A'+1;
                cout<<num;
             }
         }
@@ -57,7 +56,6 @@ Output:Count = 20852571225129716118202561518135
 Input :Enter a string: SHEWASTWENTYTWOYEARSOLD
 Output:Count = 198523119202351420252023152551181915124
 */
-
 
 
 
