@@ -19,9 +19,15 @@ int main()
         {
             cin>>array[j];
         }
-        for(j=0 ; j<num ; j++)
+        
+        // for(j=0 ; j<num ; j++)
+        // {
+        //     if(j%2==0)
+        //     cout<<array[j]<<" ";
+        // }
+        
+        for(j=0 ; j<num ; j+=2)
         {
-            if(j%2==0)
             cout<<array[j]<<" ";
         }
         cout<<endl;
