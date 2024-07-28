@@ -1,45 +1,43 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int i,T,num;
-
+    int i,T,day_food,num2;
+    float num;
     cout<<"How many number you taking = ";
     cin>>T;
 
     for(i=1 ; i<=T ; i++)
     {
+        day_food=0;
+
         cout<<"Give a number = ";
         cin>>num;
 
-        if(num%2==0)
+        while(num>=1)
         {
-            cout<<"even"<<endl;
+            num=num/2;
+            //cout<<num<<endl;
+            day_food++;
         }
-        else
-        {
-            cout<<"odd"<<endl;
-        }
-
-        //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
-        //cout<<(num%2==0?"even":"odd")<<endl;
+        cout<<day_food<<" days"<<endl;
     }
-
     return 0;
 }
 
 
 
 /*
-How many number you taking = 3
-Input : Give a number = 100
-Output :even
-
-Input : Give a number = 0
-Output :even
-
-Input : Give a number = 1111
-Output :odd
+How many number you taking = 5
+Input : Give a number = 40.0
+Output: 6 days
+Input : Give a number = 200.0
+Output: 8 days
+Input : Give a number = 300.0
+Output: 9 days
+Input : Give a number = 500.0
+Output: 9 days
+Input : Give a number = 600.0
+Output: 10 days
 */
