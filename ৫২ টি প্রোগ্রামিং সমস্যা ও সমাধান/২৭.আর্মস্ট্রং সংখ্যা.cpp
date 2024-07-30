@@ -119,3 +119,43 @@ int main()
 371 is an armstrong number!
 407 is an armstrong number!
 */
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,T,num,rem,sum,temp;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give a number = ";
+        cin>>num;
+
+        temp=num;
+        sum=0;
+
+        while(temp>=1)
+        {
+            rem=temp%10;
+            temp=temp/10;
+            //cout<<rem<<endl;
+            sum+=rem*rem*rem;
+            //cout<<sum<<endl;
+        }
+        //cout<<sum<<endl;
+        if(num==sum)
+        cout<<num<<" is an armstrong number!"<<endl;
+        else
+        cout<<num<<" is not an armstrong number!"<<endl;
+    }
+    return 0;
+}
+*/
