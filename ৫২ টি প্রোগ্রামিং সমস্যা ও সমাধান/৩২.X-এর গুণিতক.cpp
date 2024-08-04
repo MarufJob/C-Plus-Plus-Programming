@@ -4,42 +4,76 @@ using namespace std;
 
 int main()
 {
-    int i,T,num;
+    int i,j,T,num,x;
 
     cout<<"How many number you taking = ";
     cin>>T;
 
     for(i=1 ; i<=T ; i++)
     {
-        cout<<"Give a number = ";
-        cin>>num;
+        cout<<"Give two number = ";
+        cin>>x>>num;
 
-        if(num%2==0)
+        if(x>num)
         {
-            cout<<"even"<<endl;
+            cout<<"Invalid!"<<endl;
         }
+
         else
         {
-            cout<<"odd"<<endl;
+            for(j=x; j<=num; j+=x)
+            {
+            cout<<j<<endl;
+            }
         }
 
-        //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
-        //cout<<(num%2==0?"even":"odd")<<endl;
     }
-
     return 0;
 }
 
 
 
 /*
-How many number you taking = 3
-Input : Give a number = 100
-Output :even
-
-Input : Give a number = 0
-Output :even
-
-Input : Give a number = 1111
-Output :odd
+How many number you taking = 5
+Input : Give two number = 2 10
+Output: 2
+        4
+        6
+        8
+        10
+Input : Give two number = 99 1000
+Output: 99
+        198
+        297
+        396
+        495
+        594
+        693
+        792
+        891
+        990
+Input : Give two number = 10 5
+Output: Invalid!
+Input : Give two number = 33 333
+Output: 33
+        66
+        99
+        132
+        165
+        198
+        231
+        264
+        297
+        330
+Input : Give two number = 55 550
+Output: 55
+        110
+        165
+        220
+        275
+        330
+        385
+        440
+        495
+        550
 */
