@@ -1,32 +1,28 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int i,T,num;
+    int num,rev,T;
 
     cout<<"How many number you taking = ";
     cin>>T;
 
-    for(i=1 ; i<=T ; i++)
+    while(T--)
     {
         cout<<"Give a number = ";
         cin>>num;
 
-        if(num%2==0)
-        {
-            cout<<"even"<<endl;
-        }
-        else
-        {
-            cout<<"odd"<<endl;
-        }
+        rev=0;
 
-        //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
-        //cout<<(num%2==0?"even":"odd")<<endl;
+        while(num!=0)
+        {
+            rev*=10;
+            rev+=num%10;
+            num/=10;
+        }
+        cout<<rev<<endl;
     }
-
     return 0;
 }
 
@@ -34,12 +30,42 @@ int main()
 
 /*
 How many number you taking = 3
-Input : Give a number = 100
-Output :even
+Input : Give a number = 612
+Output: 216
+Input : Give a number = 1431056
+Output: 6501341
+Input : Give a number = 10041992
+Output: 29914001
+*/
 
-Input : Give a number = 0
-Output :even
 
-Input : Give a number = 1111
-Output :odd
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,num,leanth,T;
+    string str;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+    cin.ignore(); // Consume the newline character
+
+    while(T--)
+    {
+        cout<<"Give a number = ";
+        getline(cin,str);
+
+        leanth=str.size();
+
+        for(i=leanth-1; i>=0; i--)
+        {
+            cout<<str[i];
+        }
+        cout<<endl;
+    }
+    return 0;
+}
 */
