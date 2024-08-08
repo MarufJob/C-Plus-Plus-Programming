@@ -1,32 +1,38 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int i,T,num;
+    int i,j,leanth,num,palindrome,T;
+    string str;
 
     cout<<"How many number you taking = ";
     cin>>T;
+    cin.ignore(); // Consume the newline character
 
-    for(i=1 ; i<=T ; i++)
+    while(T--)
     {
         cout<<"Give a number = ";
-        cin>>num;
+        getline(cin,str);
 
-        if(num%2==0)
+        palindrome = 1;
+
+        leanth=str.size();
+        //cout<<leanth<<endl;
+
+        for(i=0,j=leanth-1; i<j; i++,j--)
         {
-            cout<<"even"<<endl;
+            if(str[i]!=str[j])
+            {
+                palindrome = 0;
+                break;
+            }
         }
+        if(palindrome == 1)
+        cout<<"Yes! It is palindrome!"<<endl;
         else
-        {
-            cout<<"odd"<<endl;
-        }
-
-        //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
-        //cout<<(num%2==0?"even":"odd")<<endl;
+        cout<<"Sorry! It is not palindrome!"<<endl;
     }
-
     return 0;
 }
 
@@ -34,12 +40,10 @@ int main()
 
 /*
 How many number you taking = 3
-Input : Give a number = 100
-Output :even
-
-Input : Give a number = 0
-Output :even
-
-Input : Give a number = 1111
-Output :odd
+Input : Give a number = wow
+Output: Yes! It is palindrome!
+Input : Give a number = string
+Output: Sorry! It is not palindrome!
+Input : Give a number = civic
+Output: Yes! It is palindrome!
 */
