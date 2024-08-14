@@ -1,45 +1,38 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int i,T,num;
+    int i,j,k,T,num1,num2,num3,sum,power;
 
     cout<<"How many number you taking = ";
     cin>>T;
 
     for(i=1 ; i<=T ; i++)
     {
-        cout<<"Give a number = ";
-        cin>>num;
+        cout<<"Give three number = ";
+        cin>>num1>>num2>>num3;
 
-        if(num%2==0)
-        {
-            cout<<"even"<<endl;
-        }
-        else
-        {
-            cout<<"odd"<<endl;
-        }
+        sum=0,power=1;
 
-        //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
-        //cout<<(num%2==0?"even":"odd")<<endl;
+        for(j=1; j<=num2; j++)
+        {
+            power*=num1;
+        }
+        sum+=power;
+        cout<<sum%num3<<endl;
     }
-
     return 0;
 }
 
 
 
 /*
-How many number you taking = 3
-Input : Give a number = 100
-Output :even
-
-Input : Give a number = 0
-Output :even
-
-Input : Give a number = 1111
-Output :odd
+How many number you taking = 5
+Input : Give three number = 2 3 3
+Output: 2
+Input : Give three number = 2 10 5
+Output: 4
+Input : Give three number = 50 2 3
+Output: 1
 */
