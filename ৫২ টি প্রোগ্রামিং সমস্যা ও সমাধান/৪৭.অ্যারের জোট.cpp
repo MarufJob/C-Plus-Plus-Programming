@@ -1,10 +1,9 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int i,T,num;
+    int i,j,k,l,m,T,num1,num2,num3;
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -12,34 +11,121 @@ int main()
     for(i=1 ; i<=T ; i++)
     {
         cout<<"Give a number = ";
-        cin>>num;
+        cin>>num1;
 
-        if(num%2==0)
+        int array1[num1];
+
+        for(j=0 ; j<num1 ; j++)
         {
-            cout<<"even"<<endl;
-        }
-        else
-        {
-            cout<<"odd"<<endl;
+            cin>>array1[j];
         }
 
-        //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
-        //cout<<(num%2==0?"even":"odd")<<endl;
+        cout<<"Give a number = ";
+        cin>>num2;
+
+        num3 = num1+num2;
+
+        int array2[num2],array3[num3];
+
+        for(k=0 ; k<num2 ; k++)
+        {
+            cin>>array2[k];
+        }
+
+        for(l=0,j=0,k=0 ; l<num3 ; l++)
+        {
+            if(array1[j]<array2[k])
+            {
+                array3[l] = array1[j];
+                j++;
+            }
+
+            else
+            {
+                array3[l] = array2[k];
+                k++;
+            }
+        }
+
+        for(l=0,j=0,k=0 ; l<num3 ; l++)
+        {
+            cout<<array3[l]<<" ";
+        }
+        cout<<endl;
     }
-
     return 0;
 }
 
 
 
 /*
-How many number you taking = 3
-Input : Give a number = 100
-Output :even
+How many number you taking = 5
+Input : Give a number = 3 1 3 5
+        Give a number = 2 4 10
+Output: 1 3 4 5 10
+Input : Give a number = 5 10 20 30 40 50
+        Give a number = 3 15 21 22
+Output: 10 15 20 21 22 30 40 50
+Input : Give a number = 4 2 4 6 8
+        Give a number = 5 1 3 5 7 9
+        1 2 3 4 5 6 7 8 9
+*/
 
-Input : Give a number = 0
-Output :even
 
-Input : Give a number = 1111
-Output :odd
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,j,k,l,m,T,num1,num2,num3;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give a number = ";
+        cin>>num1;
+
+        int array1[num1];
+
+        for(j=0 ; j<num1 ; j++)
+        {
+            cin>>array1[j];
+        }
+
+        cout<<"Give a number = ";
+        cin>>num2;
+
+        num3 = num1+num2;
+
+        int array2[num2],array3[num3];
+
+        for(k=0 ; k<num2 ; k++)
+        {
+            cin>>array2[k];
+        }
+
+        for(l=0,j=0,k=0 ; l<num3 ; l++)
+        {
+            if(array1[j]<array2[k])
+            {
+                array3[l] = array1[j];
+                j++;
+            }
+
+            else
+            {
+                array3[l] = array2[k];
+                k++;
+            }
+            cout<<array3[l]<<" ";
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
 */
