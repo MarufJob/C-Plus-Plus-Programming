@@ -210,3 +210,89 @@ Input : Give a number = 7 1 1 2 3 3 3 7
         Give a number = 9 1 1 2 2 3 3 7 7 9
 Output: 1 1 1 1 2 2 2 3 3 3 3 3 7 7 7 9
 */
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,j,k,l,m,T,num1,num2,num3;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give a number = ";
+        cin>>num1;
+
+        int array1[num1];
+
+        for(j=0 ; j<num1 ; j++)
+        {
+            cin>>array1[j];
+        }
+
+        cout<<"Give a number = ";
+        cin>>num2;
+
+        num3 = num1+num2;
+
+        int array2[num2],array3[num3];
+
+        for(k=0 ; k<num2 ; k++)
+        {
+            cin>>array2[k];
+        }
+
+        for(l=0,j=0,k=0 ; l<num3 ; l++)
+        {
+            //cout<<"l = "<<l<<"->";
+            if(array1[j]==array3[l-1] || array2[k]==array3[l-1])
+            {
+                if(array1[j]==array3[l-1])
+                {
+                    j++;
+                    //cout<<"j = "<<j<<"*->"<<endl;
+                }
+
+                else
+                {
+                    k++;
+                    //cout<<"k = "<<k<<"*->"<<endl;
+                }
+
+                l--;
+                num3--;
+                continue;
+            }
+
+            else if((array1[j]<array2[k] && j<num1) || k>num2-1)
+            {
+                array3[l] = array1[j];
+                //cout<<"j = "<<j<<"->";
+                j++;
+            }
+
+            else
+            {
+                array3[l] = array2[k];
+                //cout<<"k = "<<k<<"->";
+                k++;
+            }
+            cout<<array3[l]<<" ";//<<endl;
+        }
+        cout<<endl;
+/*
+        for(l=0,j=0,k=0 ; l<num3 ; l++)
+        {
+            cout<<array3[l]<<" ";
+        }
+*/
+    }
+    return 0;
+}
+*/
