@@ -95,3 +95,33 @@ int main()
     return 0;
 }
 */
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,j,k,T,num1,num2,num3,power,result;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give three number = ";
+        cin>>num1>>num2>>num3;
+
+        power=1;
+        for(j=1; j<=num2/2; j++)
+        {
+            power=(num1*power)%num3;
+        }
+        result = power%num3;
+        cout<<"Result = "<<(result*result)%num3<<endl;
+    }
+    return 0;
+}
+*/
