@@ -104,7 +104,7 @@ using namespace std;
 
 int main()
 {
-    int i,j,k,T,num1,num2,num3,power,result;
+    int i,j,k,T,mid,num1,num2,num3,power,result;
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -114,14 +114,34 @@ int main()
         cout<<"Give three number = ";
         cin>>num1>>num2>>num3;
 
-        power=1;
+        mid=num2/2,power=1;
+
         for(j=1; j<=num2/2; j++)
         {
             power=(num1*power)%num3;
         }
-        result = power%num3;
-        cout<<"Result = "<<(result*result)%num3<<endl;
+
+        if(num2%2==0)
+        cout<<"Result = "<<((power*power)%num3)<<endl;
+        else
+        cout<<"Result = "<<((power*power*num1)%num3)<<endl;
     }
     return 0;
 }
+*/
+
+
+
+/*
+How many number you taking = 5
+Give three number = 5 10 7
+Result = 2
+Give three number = 3 9 4
+Result = 3
+Give three number = 5 9 7
+Result = 6
+Give three number = 100 100 3
+Result = 1
+Give three number = 50 49 3
+Result = 2
 */
