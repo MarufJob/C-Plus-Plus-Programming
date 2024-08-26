@@ -1,45 +1,51 @@
 #include <iostream>
-
+#include <cstring>
+//#include <stdio.h>
 using namespace std;
 
 int main()
 {
-    int i,T,num;
+    int i,j,k,T,length,num;
 
     cout<<"How many number you taking = ";
     cin>>T;
 
     for(i=1 ; i<=T ; i++)
     {
-        cout<<"Give a number = ";
+        cout<<"Give three number = ";
         cin>>num;
+        cin.ignore();
 
-        if(num%2==0)
+        char str[num][100];
+
+        for(j=1; j<=num; j++)
         {
-            cout<<"even"<<endl;
-        }
-        else
-        {
-            cout<<"odd"<<endl;
+            cin.getline(str[j], 10000);
+            //cin.ignore();
+            //scanf(" %[^\n]",str[j]);
         }
 
-        //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
-        //cout<<(num%2==0?"even":"odd")<<endl;
+        for(j=1; j<=num; j++)
+        {
+            length=strlen(str[j]);
+            for(k=0 ; k<length ; k++)
+            {
+               cout<<str[j][k];
+            }
+            cout<<endl;
+        }
     }
-
     return 0;
 }
 
 
 
+
+
 /*
-How many number you taking = 3
-Input : Give a number = 100
-Output :even
-
-Input : Give a number = 0
-Output :even
-
-Input : Give a number = 1111
-Output :odd
+Fazley
+Atif
+Maruf
+Atif
+Fazley
 */
