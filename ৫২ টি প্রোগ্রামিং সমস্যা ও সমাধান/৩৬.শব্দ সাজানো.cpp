@@ -103,3 +103,14 @@ Output:t'nod etamitserednu eht
 Input: Give a string: power of a girl
 Output:rewop fo a lrig
 */
+/*
+How many input are you taking = 4
+Input: Give a string: This is a test
+Output:sihT si a tset
+Input: Give a string: Hello World
+Output:olleH dlroW
+Input: Give a string: don't underestimate the
+Output:t'nod etamitserednu eht
+Input: Give a string: power of a girl
+Output:rewop fo a lrig
+*/
