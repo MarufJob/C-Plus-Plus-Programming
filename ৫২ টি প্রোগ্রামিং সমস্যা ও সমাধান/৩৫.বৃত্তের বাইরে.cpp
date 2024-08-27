@@ -22,7 +22,6 @@ int main()
         {
             cout<<"odd"<<endl;
         }
-
         //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
         //cout<<(num%2==0?"even":"odd")<<endl;
     }
