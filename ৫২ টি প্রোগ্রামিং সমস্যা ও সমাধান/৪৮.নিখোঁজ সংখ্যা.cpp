@@ -1,10 +1,10 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int i,T,num;
+    int i,j,T,num,sum,sum_j,result;
+    int array[num];
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -14,19 +14,22 @@ int main()
         cout<<"Give a number = ";
         cin>>num;
 
-        if(num%2==0)
+        for(j=0; j<num-1; j++)
         {
-            cout<<"even"<<endl;
-        }
-        else
-        {
-            cout<<"odd"<<endl;
+            cin>>array[j];
         }
 
-        //(num%2==0)?cout<<"even"<<endl:cout<<"odd"<<endl;
-        //cout<<(num%2==0?"even":"odd")<<endl;
+        sum=0,sum_j=0;
+        for(j=0; j<num-1; j++)
+        {
+            sum=sum+array[j];
+            sum_j=sum_j+(j+1);
+        }
+        sum_j=sum_j+(j+1);
+
+        result=sum_j-sum;
+        cout<<result<<endl;
     }
-
     return 0;
 }
 
@@ -34,12 +37,10 @@ int main()
 
 /*
 How many number you taking = 3
-Input : Give a number = 100
-Output :even
-
-Input : Give a number = 0
-Output :even
-
-Input : Give a number = 1111
-Output :odd
+Input : Give a number = 7 2 1 4 6 5 3
+Output: 7
+Input : Give a number = 9 9 4 5 8 6 1 7 2
+Output: 3
+Input : Give a number = 5 1 2 4 3
+Output: 5
 */
