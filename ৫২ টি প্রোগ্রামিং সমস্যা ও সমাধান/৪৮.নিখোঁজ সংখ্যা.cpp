@@ -3,6 +3,71 @@ using namespace std;
 
 int main()
 {
+    int i,j,k,T,num,found;
+    int array[1000];
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give a number = ";
+        cin>>num;
+
+        for(j=0; j<num-1; j++)
+        {
+            cin>>array[j];
+        }
+/*
+        for(j=0; j<num-1; j++)
+        {
+            cout<<array[j]<<" ";
+        }
+        cout<<endl;
+*/
+
+        for(j=1; j<=num; j++)
+        {
+            found=0;
+            for(k=0; k<num-1; k++)
+            {
+                if(j==array[k])
+                {
+                    found=1;
+                    break;
+                }
+            }
+            if(found==0)
+            {
+                //cout<<"k = "<<k<<" "<<j<<endl;
+                cout<<j<<endl;
+                break;
+            }
+        }
+    }
+    return 0;
+}
+
+
+
+/*
+How many number you taking = 3
+Input : Give a number = 7 2 1 4 6 5 3
+Output: 7
+Input : Give a number = 9 9 4 5 8 6 1 7 2
+Output: 3
+Input : Give a number = 5 1 2 4 3
+Output: 5
+*/
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
     int i,j,T,num,sum,sum_j,result;
     int array[num];
 
@@ -32,18 +97,11 @@ int main()
     }
     return 0;
 }
-
-
-
-/*
-How many number you taking = 3
-Input : Give a number = 7 2 1 4 6 5 3
-Output: 7
-Input : Give a number = 9 9 4 5 8 6 1 7 2
-Output: 3
-Input : Give a number = 5 1 2 4 3
-Output: 5
 */
+
+
+
+
 
 
 
