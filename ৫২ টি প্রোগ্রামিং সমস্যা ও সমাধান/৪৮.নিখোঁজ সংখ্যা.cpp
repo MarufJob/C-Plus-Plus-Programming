@@ -68,6 +68,40 @@ using namespace std;
 
 int main()
 {
+    int i,j,k,T,num,missing;
+    int array[1000];
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give a number = ";
+        cin>>num;
+
+        for(j=0; j<num-1; j++)
+        {
+            array[j]=0;
+        }
+
+        for(j=0; j<num-1; j++)
+        {
+            cout<<array[j]<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+*/
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
     int i,j,T,num,sum,sum_j,result;
     int array[num];
 
