@@ -68,7 +68,7 @@ using namespace std;
 
 int main()
 {
-    int i,j,T,n,num,missing;
+    int i,j,k,T,n,num,missing;
     int array[1000];
 
     cout<<"How many number you taking = ";
@@ -79,10 +79,7 @@ int main()
         cout<<"Give a number = ";
         cin>>num;
 
-        for(j=0; j<num; j++)
-        {
-            array[j]=0;
-        }
+        for(j=0; j<num; j++) array[j]=0;
 
         for(j=0; j<num-1; j++)
         {
