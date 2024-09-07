@@ -81,10 +81,7 @@ int main()
 
         for(j=0; j<num; j++) array[j]=0;
 
-        for(j=0; j<num-1; j++)
-        {
-            cout<<array[j]<<" ";
-        }
+        for(j=0; j<num-1; j++) cout<<array[j]<<" ";
         cout<<endl;
 
         for(j=0; j<num-1; j++)
