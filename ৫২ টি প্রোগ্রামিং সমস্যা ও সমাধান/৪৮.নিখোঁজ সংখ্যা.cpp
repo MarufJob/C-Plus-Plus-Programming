@@ -89,7 +89,7 @@ int main()
             cin>>n;
             array[n-1]=1;
         }
-        cout<<endl;
+        //cout<<endl;
 
         for(j=0; j<num; j++)
         {
