@@ -96,6 +96,16 @@ int main()
             cout<<array[j]<<" ";
         }
         cout<<endl;
+        
+        for(j=0; j<num; j++)
+        {
+            if(array[j]==0)
+            {
+            cout<<j+1<<" ";
+            break;
+            }
+        }
+        cout<<endl;
     }
     return 0;
 }
