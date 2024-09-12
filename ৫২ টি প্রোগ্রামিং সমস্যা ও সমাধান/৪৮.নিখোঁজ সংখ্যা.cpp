@@ -91,8 +91,8 @@ int main()
         }
         //cout<<endl;
 
-        for(j=0; j<num; j++) cout<<array[j]<<" ";
-        cout<<endl;
+        //for(j=0; j<num; j++) cout<<array[j]<<" ";
+        //cout<<endl;
         
         for(j=0; j<num; j++)
         {
