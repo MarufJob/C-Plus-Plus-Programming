@@ -68,7 +68,7 @@ using namespace std;
 
 int main()
 {
-    int i,j,k,T,n,num,missing;
+    int i,j,T,n,num,missing;
     int array[1000];
 
     cout<<"How many number you taking = ";
@@ -117,7 +117,7 @@ using namespace std;
 int main()
 {
     int i,j,T,num,sum,sum_j,result;
-    int array[num];
+    //int array[num]; //array declare is not correct in this place.
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -126,6 +126,8 @@ int main()
     {
         cout<<"Give a number = ";
         cin>>num;
+        
+        int array[num]; //array declare is correct in this place after assigning variable(num) value.
 
         for(j=0; j<num-1; j++)
         {
