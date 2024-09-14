@@ -151,18 +151,13 @@ int main()
 
 
 
-
-
-
-
-
+/*
 #include <iostream>
 using namespace std;
 
 int main()
 {
     int i,j,T,num,sum,sum_j,result;
-    int array[num];
 
     cout<<"How many number you taking = ";
     cin>>T;
@@ -171,6 +166,8 @@ int main()
     {
         cout<<"Give a number = ";
         cin>>num;
+
+        int array[num];
 
         for(j=0; j<num-1; j++)
         {
@@ -193,6 +190,7 @@ int main()
     }
     return 0;
 }
+*/
 
 
 
