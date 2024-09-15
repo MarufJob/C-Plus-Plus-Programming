@@ -252,6 +252,61 @@ j = 5  (j+1) = 6 -> 21
 
 
 
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i,j,k,T,num,sum,sum_j,result;
+
+    cout<<"How many number you taking = ";
+    cin>>T;
+
+    for(i=1 ; i<=T ; i++)
+    {
+        cout<<"Give a number = ";
+        cin>>num;
+
+        int array[10000];
+
+        for(j=0; j<num-1; j++)
+        {
+            cin>>array[j];
+        }
+
+        for(j=0; j<num-1; j++)
+        {
+            cout<<array[j]<<" ";
+        }
+        cout<<endl;
+
+        sum=0,sum_j=0,k=1;
+        for(j=0; j<num-1; j++)
+        {
+            sum=sum+array[j];
+            sum_j=sum_j+k;
+            cout<<"j = "<<j<<"  "<<"array[j] = "<<array[j]<<" -> "<<sum<<endl;
+            cout<<"j = "<<j<<"  "<<"(k) = "<<(k)<<" -> "<<sum_j<<endl;
+
+            k++;
+        }
+        sum_j=sum_j+k;
+        cout<<"j = "<<j<<"  "<<"(k) = "<<(k)<<" -> "<<sum_j<<endl;
+
+        result=sum_j-sum;
+        cout<<result<<endl;
+    }
+    return 0;
+}
+*/
+
+
+
+
+
+
+
 #include <iostream>
 using namespace std;
 
@@ -288,53 +343,6 @@ int main()
             sum=sum+array[j];
             sum_j=sum_j+k;
 
-            //cout<<"j = "<<j<<"  "<<"array[j] = "<<array[j]<<" -> "<<sum<<endl;
-            //cout<<"j = "<<j<<"  "<<"(j+1) = "<<(j+1)<<" -> "<<sum_j<<endl;
-        }
-        sum_j=sum_j+k;
-        //cout<<"j = "<<j<<"  "<<"(j+1) = "<<(j+1)<<" -> "<<sum_j<<endl;
-
-        result=sum_j-sum;
-        cout<<result<<endl;
-    }
-    return 0;
-}
-
-
-
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int i,j,k,T,num,sum,sum_j,result;
-    int array[num];
-
-    cout<<"How many number you taking = ";
-    cin>>T;
-
-    for(i=1 ; i<=T ; i++)
-    {
-        cout<<"Give a number = ";
-        cin>>num;
-
-        for(j=0; j<num-1; j++)
-        {
-            cin>>array[j];
-        }
-
-        for(j=0; j<num-1; j++)
-        {
-            cout<<array[j]<<" ";
-        }
-        cout<<endl;
-
-        sum=0,sum_j=0,k=1;
-        for(j=0; j<num-1; j++)
-        {
-            sum=sum+array[j];
-            sum_j=sum_j+k;
-            k++;
             //cout<<"j = "<<j<<"  "<<"array[j] = "<<array[j]<<" -> "<<sum<<endl;
             //cout<<"j = "<<j<<"  "<<"(j+1) = "<<(j+1)<<" -> "<<sum_j<<endl;
         }
