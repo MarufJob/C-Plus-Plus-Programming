@@ -288,7 +288,6 @@ int main()
             sum_j=sum_j+k;
             cout<<"j = "<<j<<"  "<<"array[j] = "<<array[j]<<" -> "<<sum<<endl;
             cout<<"j = "<<j<<"  "<<"(k) = "<<(k)<<" -> "<<sum_j<<endl;
-
             k++;
         }
         sum_j=sum_j+k;
@@ -300,57 +299,3 @@ int main()
     return 0;
 }
 */
-
-
-
-
-
-
-
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int i,j,k,T,num,sum,sum_j,result;
-    char array[1000];
-
-    cout<<"How many number you taking = ";
-    cin>>T;
-    cin.ignore();
-
-    for(i=1 ; i<=T ; i++)
-    {
-        cout<<"Give a number = ";
-        cin>>num;
-
-        cin.get(array,1000);
-/*
-        for(j=0; j<num-1; j++)
-        {
-            cin>>array[j];
-        }
-*/
-        for(j=0; j<num-1; j++)
-        {
-            cout<<array[j]<<" ";
-        }
-        cout<<endl;
-
-        sum=0,sum_j=0,k=1;
-        for(j=0; j<num-1; j++)
-        {
-            sum=sum+array[j];
-            sum_j=sum_j+k;
-
-            //cout<<"j = "<<j<<"  "<<"array[j] = "<<array[j]<<" -> "<<sum<<endl;
-            //cout<<"j = "<<j<<"  "<<"(j+1) = "<<(j+1)<<" -> "<<sum_j<<endl;
-        }
-        sum_j=sum_j+k;
-        //cout<<"j = "<<j<<"  "<<"(j+1) = "<<(j+1)<<" -> "<<sum_j<<endl;
-
-        result=sum_j-sum;
-        cout<<result<<endl;
-    }
-    return 0;
-}
