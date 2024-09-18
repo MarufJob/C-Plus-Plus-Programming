@@ -1,11 +1,11 @@
 #include <iostream>
+//#include <math.h>
 #include <cstring>
-
 using namespace std;
 
 int main() 
 {
-    int i,j,k,t,num1,num2,count;
+    int i,j,k,t,count,num1,num2,root;
     
     cout<<"How many input are you taking = ";
     cin>>t;
@@ -24,8 +24,10 @@ int main()
         for(k=num1 ; k<=num2 ; k++)
         {
             int countNum = 0;//loop_iteration = 0;
+            //root = sqrt(k);
     
-            for(j=2 ; j*j<=k ; j++)
+            for(j=2 ; j<=k/j ; j++)
+            //for(j=2 ; j*j<=k ; j++)
             {
                 if(k%j==0)
                 {
