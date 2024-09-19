@@ -1,5 +1,5 @@
 #include <iostream>
-//#include <math.h>
+#include <math.h>
 #include <cstring>
 using namespace std;
 
@@ -24,10 +24,11 @@ int main()
         for(k=num1 ; k<=num2 ; k++)
         {
             int countNum = 0;//loop_iteration = 0;
-            //root = sqrt(k);
+            root = sqrt(k);
     
-            for(j=2 ; j<=k/j ; j++)
+            //for(j=2 ; j<=k/j ; j++)
             //for(j=2 ; j*j<=k ; j++)
+            for(j=2 ; j<=root ; j++)
             {
                 if(k%j==0)
                 {
