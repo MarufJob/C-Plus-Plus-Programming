@@ -8,7 +8,6 @@ int main()
     
     cout<<"How many input are you taking = ";
     cin>>t;
-    cin.ignore();// Consume the newline character after inputting the string
     
     for(i=1 ; i<=t ; i++)
     {
@@ -110,7 +109,6 @@ int main()
     
     cout<<"How many input are you taking = ";
     cin>>t;
-    cin.ignore();// Consume the newline character after inputting the string
     
     for(i=1 ; i<=t ; i++)
     {
@@ -147,4 +145,78 @@ int main()
     }
     return 0;
 }
+*/
+
+
+
+/*
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() 
+{
+    int i,t,count,root;
+    long long int j,num;
+    
+    cout<<"How many input are you taking = ";
+    cin>>t;
+    
+    for(i=1 ; i<=t ; i++)
+    {
+        count = 0;
+        cout<<"Give a number = ";
+        cin>>num;
+        
+        root = sqrt(num);
+        
+        if(num<2)
+        {
+            cout<<num<<" is not a prime"<<endl;
+        }
+        
+        else if(num%2==0)
+        {
+            cout<<num<<" is not a prime"<<endl;
+        }
+        
+        else
+        {
+            //for(j=2 ; j<=k/j ; j++)
+            //for(j=2 ; j*j<=k ; j++)
+            for(j=3 ; j<=root ; j=j+2)
+            {
+                //cout<<j<<endl;
+                if(num%j==0)
+                {
+                    count = 1;
+                    break;
+                }
+            }
+            
+            if(count == 0)
+            cout<<num<<" is a prime"<<endl;
+                
+            else
+            cout<<num<<" is not a prime"<<endl;
+        }
+    }
+    return 0;
+}
+*/
+
+
+
+/*
+How many input are you taking = 5
+Input :Give a number = 9223372036854775783
+Output:9223372036854775783 is a prime
+Input :Give a number = 5
+Output:9223372036854774999 is a prime
+Input :Give a number = 9223372036854574879
+Output:9223372036854574879 is a prime
+Input :Give a number = 9223372036757
+Output:9223372036757 is not a prime
+Input :Give a number = 999999999989
+Output:999999999989 is a prime
 */
