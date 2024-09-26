@@ -175,6 +175,11 @@ int main()
             cout<<num<<" is not a prime"<<endl;
         }
         
+        else if(num==2)
+        {
+            cout<<num<<" is a prime"<<endl;
+        }
+        
         else if(num%2==0)
         {
             cout<<num<<" is not a prime"<<endl;
