@@ -79,6 +79,7 @@ using namespace std;
 #include <math.h>
 #define size 100001
 //int array [size];
+//char array[size];
 bool array[size];
 
 
@@ -136,7 +137,6 @@ int main()
     }
     return 0;
 }
-
 */
 
 
