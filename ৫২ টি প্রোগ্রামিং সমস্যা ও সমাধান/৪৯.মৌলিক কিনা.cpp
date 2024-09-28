@@ -225,3 +225,106 @@ Output:9223372036757 is not a prime
 Input :Give a number = 999999999989
 Output:999999999989 is a prime
 */
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+//#define size 1000001
+//int array [size];
+
+
+
+/*
+void sieve()
+{
+    int i,j,root;
+
+     for(i=2; i<size; i++)
+    {
+        array[i]=1;
+    }
+
+    root = sqrt(size);
+
+    for(i=2; i<=root; i++)
+    {
+        if(array[i]==1)
+        {
+             for(j=2; i*j<=size; j++)
+            {
+                array[i * j] = 0;
+            }
+        }
+    }
+
+}
+*/
+
+
+
+void find_prime_number(int prime_are[], int n)
+{
+    int i,j,root;
+/*
+     for(i=2; i<size; i++)
+    {
+        array[i]=1;
+    }
+*/
+    root = sqrt(size);
+
+    for(i=2; i<=root; i++)
+    {
+        if(array[i]==1)
+        {
+             for(j=2; i*j<=size; j++)
+            {
+                array[i * j] = 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+int main() {
+    int prime_ara[1000000];
+    int i,T,sqrt_n;
+    long long int N;
+    
+    cin>>T;
+    
+    while(T--)
+    {
+        cin>>N;
+        sqrt_n = sqrt(N);
+        find_prime_number(prime_ara, sqrt_n);
+        int is_prime = 1;
+        
+        for(i = 0; prime_ara[i] <= sqrt_n; i++)
+        {
+            if(N % prime_ara[i] == 0)
+            {
+                is_prime = 0;
+                break;
+            }
+        }
+        
+        if(is_prime == 1)
+        cout<<N<<" is a prime"<<endl;
+        
+        else
+        cout<<N<<" is not a prime"<<endl;
+    }
+    return 0;
+}
