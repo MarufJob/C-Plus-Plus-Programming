@@ -374,11 +374,11 @@ void sieve()
 
 
 
-void find_prime_number(int prime_are[], int n)
+void find_prime_number(int prime_are[])
 {
     int i,j,root;
     
-    int size = 1000000
+    int size = 1000000;
     root = sqrt(size);
 
     for(i=2; i<size; i++)
@@ -390,13 +390,14 @@ void find_prime_number(int prime_are[], int n)
 
     for(i=2; i<=root; i++)
     {
-        prime_are[i]=i;
+        //prime_are[i]=i;
         if(prime_are[i]==1)
         {
             //prime_are[i]=i;
             for(j=2; i*j<=size; j++)
             {
-                prime_are[i * j] = 0;
+                //prime_are[i * j] = 0;
+                prime_are[i * j] = i*j;
             }
         }
     }
@@ -414,10 +415,12 @@ int main() {
     int i,T,sqrt_n;
     long long int N;
     
+    cout<<"How many input are you taking = ";
     cin>>T;
     
     while(T--)
     {
+        cout<<"Give a number = ";
         cin>>N;
         sqrt_n = sqrt(N);
         find_prime_number(prime_ara);
