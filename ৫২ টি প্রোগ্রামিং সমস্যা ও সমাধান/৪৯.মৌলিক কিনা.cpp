@@ -378,7 +378,7 @@ void find_prime_number(int prime_are[])
 {
     int i,j,root;
     
-    int size = 1000000;
+    int size = 100;
     root = sqrt(size);
 
     for(i=2; i<size; i++)
@@ -393,7 +393,7 @@ void find_prime_number(int prime_are[])
         //prime_are[i]=i;
         if(prime_are[i]==1)
         {
-            //prime_are[i]=i;
+            prime_are[i]=i;
             for(j=2; i*j<=size; j++)
             {
                 //prime_are[i * j] = 0;
@@ -406,12 +406,13 @@ void find_prime_number(int prime_are[])
     {
         cout<<prime_are[i]<<" -- ";
     }
+    cout<<endl;
 }
 
 
 
 int main() {
-    int prime_ara[1000000];
+    int prime_ara[100];
     int i,T,sqrt_n;
     long long int N;
     
@@ -423,11 +424,22 @@ int main() {
         cout<<"Give a number = ";
         cin>>N;
         sqrt_n = sqrt(N);
+        
         find_prime_number(prime_ara);
+        
+        cout<<"-----------------------------------"<<endl;
+        
+        // for(i=2; i<100; i++)
+        // {
+        //     cout<<prime_ara[i]<<" -- ";
+        // }
+        // cout<<endl;
+    
         int is_prime = 1;
         
-        for(i = 0; prime_ara[i] <= sqrt_n; i++)
+        for(i = 2; prime_ara[i] <= sqrt_n; i++)
         {
+            cout<<prime_ara[i]<<" -- ";
             if(N % prime_ara[i] == 0)
             {
                 is_prime = 0;
