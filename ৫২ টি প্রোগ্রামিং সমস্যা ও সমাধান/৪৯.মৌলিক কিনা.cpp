@@ -402,11 +402,11 @@ void find_prime_number(int prime_are[])
         }
     }
     
-    for(i=2; i<size; i++)
-    {
-        cout<<prime_are[i]<<" -- ";
-    }
-    cout<<endl;
+    // for(i=2; i<size; i++)
+    // {
+    //     cout<<prime_are[i]<<" -- ";
+    // }
+    // cout<<endl;
 }
 
 
