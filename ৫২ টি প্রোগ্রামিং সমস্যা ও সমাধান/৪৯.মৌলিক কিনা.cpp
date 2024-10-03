@@ -347,29 +347,29 @@ using namespace std;
 
 
 /*
-void sieve()
-{
-    int i,j,root;
+// void sieve()
+// {
+//     int i,j,root;
 
-     for(i=2; i<size; i++)
-    {
-        array[i]=1;
-    }
+//      for(i=2; i<size; i++)
+//     {
+//         array[i]=1;
+//     }
 
-    root = sqrt(size);
+//     root = sqrt(size);
 
-    for(i=2; i<=root; i++)
-    {
-        if(array[i]==1)
-        {
-             for(j=2; i*j<=size; j++)
-            {
-                array[i * j] = 0;
-            }
-        }
-    }
+//     for(i=2; i<=root; i++)
+//     {
+//         if(array[i]==1)
+//         {
+//              for(j=2; i*j<=size; j++)
+//             {
+//                 array[i * j] = 0;
+//             }
+//         }
+//     }
 
-}
+// }
 */
 
 
