@@ -187,7 +187,7 @@ int main()
         
         else
         {
-            //for(j=2 ; j<=k/j ; j++)
+            //for(j=3 ; j<=k/j ; j=j+2)
             //for(j=3 ; j*j<=k ; j=j+2)
             for(j=3 ; j<=root ; j=j+2)
             {
