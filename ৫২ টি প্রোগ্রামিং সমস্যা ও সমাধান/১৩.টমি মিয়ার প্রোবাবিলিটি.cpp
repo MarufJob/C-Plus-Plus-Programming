@@ -123,3 +123,83 @@ void print_reverse(char str[])
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <sstream>
+#include <map>
+using namespace std;
+
+// Function to calculate factorial
+long long factorial(int n) {
+    long long fact = 1;
+    for (int i = 2; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+int main() {
+    int T;
+    cout << "Enter number of test cases: ";
+    cin >> T;
+    cin.ignore(); // Ignore the newline character after reading T
+
+    for (int i = 0; i < T; i++) {
+        string sentence;
+        cout << "Enter sentence " << i + 1 << ": ";
+        getline(cin, sentence);
+
+        // Count the number of words in the sentence
+        stringstream ss(sentence);
+        string word;
+        int word_count = 0;
+        while (ss >> word) {
+            word_count++;
+        }
+
+        // Calculate factorial of the number of words
+        long long fact = factorial(word_count);
+        
+        
+
+        
+        
+        // string sentence;
+        // cout << "Enter a sentence: ";
+        // getline(cin, sentence);  // বাক্য ইনপুট নেওয়া হচ্ছে
+    
+        map<string, int> word_count2;  // প্রতিটি শব্দের সংখ্যা সংরক্ষণ করতে একটি map
+    
+        stringstream sss(sentence);    // বাক্যকে word-by-word করার জন্য stringstream ব্যবহার
+        string word2;
+    
+        // বাক্য থেকে একটি একটি শব্দ বের করা এবং map এ গুন করা
+        while (sss >> word) {
+            word_count2[word]++;  // যদি শব্দটি আগে থেকেই থাকে, তাহলে 1 বৃদ্ধি করা হবে
+        }
+    
+        // প্রতিটি শব্দের সংখ্যা প্রিন্ট করা
+        cout << "Word counts in the sentence:" << endl;
+        for (auto &entry : word_count2) {
+            cout << entry.first << " : " << entry.second << endl;  // শব্দ এবং তার সংখ্যা প্রিন্ট
+            ////////fact/entry.second/////////
+            fact=fact / entry.second;
+        }
+        
+        
+
+        // Output the probability in the form 1/fact
+        cout << "Probability: 1/" << fact << endl;
+    }
+
+    return 0;
+}
