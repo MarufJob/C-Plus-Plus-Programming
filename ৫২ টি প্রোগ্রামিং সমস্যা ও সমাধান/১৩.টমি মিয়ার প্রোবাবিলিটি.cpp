@@ -192,7 +192,7 @@ int main() {
         for (auto &entry : word_count2) {
             cout << entry.first << " : " << entry.second << endl;  // শব্দ এবং তার সংখ্যা প্রিন্ট
             ////////fact/entry.second/////////
-            fact=fact / entry.second;
+            fact=fact / factorial(entry.second);
         }
         
         
