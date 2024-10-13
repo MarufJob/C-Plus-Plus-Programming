@@ -39,13 +39,11 @@ int main() {
                 {
                     if(str2[k]!=str1[j+k])
                     {
-                        // count=1;
                         break;
-                    }
-                    
-                
-                    
+                    }  
                 }
+
+                
                 if(k==S2_len)
                 {
                     //cout<<"K = "<<k<<" "<<"S2_len = "<<S2_len<<endl;
