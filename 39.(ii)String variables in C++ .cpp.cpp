@@ -10,8 +10,10 @@ int main()
     string str1;
 
     cout << "Enter a string: ";
-    cin.get(str, 100, '\n');
-    cin.ignore(); // Consume the newline character after inputting the string
+    // cin.get(str, 100, '\n');
+    // cin.get(str, 100);
+    // cin.ignore(); // Consume the newline character after inputting the string
+    cin.getline(str, 100);
 
     cout << "Enter another string: ";
     getline(cin, str1);
@@ -34,7 +36,7 @@ void display(string stringVar)
 
 
 /*
-Input: Enter a string: My name is Md.Fazley Atif Maruf
+Input :Enter a string: My name is Md.Fazley Atif Maruf
        Enter another string: I am a male
 Output:Entered char array is: My name is Md.Fazley Atif Maruf
        Entered string is: I am a male
