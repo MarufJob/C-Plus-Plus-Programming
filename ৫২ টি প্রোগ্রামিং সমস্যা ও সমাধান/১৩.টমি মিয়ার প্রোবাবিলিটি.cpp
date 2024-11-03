@@ -111,3 +111,53 @@ Number of ways= 10! / 3!×2!×4!×1!
                   
 উত্তর:সবগুলো বল 12,600 উপায়ে সাজানো যাবে
 */
+
+
+
+/*
+#include <iostream>
+#include <sstream>
+#include <map>
+using namespace std;
+
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 2; i <= n; i++) {
+        fact *= i;  
+    }
+    return fact;
+}
+
+int main() {
+    int T;
+    cout << "Enter number of test cases: ";
+    cin >> T;  
+    cin.ignore(); 
+
+    for (int i = 0; i < T; i++) {
+        string sentence;
+        cout << "Enter sentence " << i + 1 << ": ";
+        getline(cin, sentence);
+
+        stringstream ss(sentence);
+        string word;
+        int word_count = 0;
+       
+        map<string, int> word_count_map;
+
+        while (ss >> word) {
+            word_count++;
+            word_count_map[word]++;
+        }
+
+        int fact = factorial(word_count);
+
+        for (auto &entry : word_count_map) {
+            // cout << entry.first << " : " << entry.second << endl;  // Print each word and its count
+            fact = fact / factorial(entry.second); 
+        }
+        cout << "Probability: 1/" << fact << endl;
+    }
+    return 0;
+}
+*/
